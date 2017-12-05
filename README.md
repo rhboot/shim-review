@@ -33,18 +33,18 @@ What's the justification that this really does need to be signed for the whole w
 -------------------------------------------------------------------------------
 Who is the primary contact for security updates, etc.
 -------------------------------------------------------------------------------
-Name:
-Position:
-Email address:
-PGP key, signed by the other security contacts, and preferably also with signatures that are reasonably well known in the linux community:
+- Name:
+- Position:
+- Email address:
+- PGP key, signed by the other security contacts, and preferably also with signatures that are reasonably well known in the linux community:
 
 -------------------------------------------------------------------------------
 Who is the secondary contact for security updates, etc.
 -------------------------------------------------------------------------------
-Name:
-Position:
-Email address:
-PGP key, signed by the other security contacts, and preferably also with signatures that are reasonably well known in the linux community:
+- Name:
+- Position:
+- Email address:
+- PGP key, signed by the other security contacts, and preferably also with signatures that are reasonably well known in the linux community:
 
 -------------------------------------------------------------------------------
 What upstream shim tag is this starting from:
