@@ -7,7 +7,7 @@ This repo is for review of requests for signing shim.  To create a request for r
 - commit all of that
 - tag it with a tag of the form "myorg-shim-arch-YYYYMMDD"
 - push that to github
-- file an issue at https://github.com/rhboot/shim-review/issues with a link to your tag
+- file an issue at https://github.com/rhboot/shim-review/issues with a link to your branch
 
 Note that we really only have experience with using grub2 on Linux, so asking
 us to endorse anything else for signing is going to require some convincing on
@@ -71,14 +71,7 @@ Which files in this repo are the logs for your build?   This should include logs
 -------------------------------------------------------------------------------
 [your text here]
 
-
 -------------------------------------------------------------------------------
-Put info about what bootloader you're using, including which patches it includes to enforce Secure Boot here:
--------------------------------------------------------------------------------
-[your text here]
-
--------------------------------------------------------------------------------
-Put info about what kernel you're using, including which patches it includes to enforce Secure Boot here:
+Add any additional information you think we may need to validate this shim
 -------------------------------------------------------------------------------
 [your text here]
-
