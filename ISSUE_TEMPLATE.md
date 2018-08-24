@@ -30,7 +30,7 @@ Make sure you have provided the following information:
 ###### What is the origin and full version number of your bootloader (GRUB or other)?
 `[your text here]`
 
-###### If your SHIM launchers any other components, please provide further details on what is launched
+###### If your SHIM launches any other components, please provide further details on what is launched
 `[your text here]`
 
 ###### How do the launched components prevent execution of unauthenticated code?
