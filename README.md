@@ -18,60 +18,71 @@ Here's the template:
 -------------------------------------------------------------------------------
 What organization or people are asking to have this signed:
 -------------------------------------------------------------------------------
-[your text here]
+[Guangdong Zhongxing Newstart Technology Co. ,Ltd]
 
 -------------------------------------------------------------------------------
 What product or service is this for:
 -------------------------------------------------------------------------------
-[your text here]
+[Newstart Desktop Linux V3]
 
 -------------------------------------------------------------------------------
 What's the justification that this really does need to be signed for the whole world to be able to boot it:
 -------------------------------------------------------------------------------
-[your text here]
+[We're OS vendor]
 
 -------------------------------------------------------------------------------
 Who is the primary contact for security updates, etc.
 -------------------------------------------------------------------------------
-- Name:
-- Position:
-- Email address:
+- Name:Chen Xiaoyuan
+- Position:Engineer
+- Email address:chen.xiaoyuan@zte.com.cn
 - PGP key, signed by the other security contacts, and preferably also with signatures that are reasonably well known in the linux community:
+linux community:https://github.com/cxy-uestc/shim-review/tree/nsdl-3.0/chen.pub
 
 -------------------------------------------------------------------------------
 Who is the secondary contact for security updates, etc.
 -------------------------------------------------------------------------------
-- Name:
-- Position:
-- Email address:
+- Name:Gaoying
+- Position:Engineer
+- Email address:gao.ying101@zte.com.cn
 - PGP key, signed by the other security contacts, and preferably also with signatures that are reasonably well known in the linux community:
+linux community:https://github.com/cxy-uestc/shim-review/tree/nsdl-3.0/gao.pub
 
 -------------------------------------------------------------------------------
 What upstream shim tag is this starting from:
 -------------------------------------------------------------------------------
-[our url here]
+[https://github.com/rhboot/shim/tree/0.8/]
 
 -------------------------------------------------------------------------------
 URL for a repo that contains the exact code which was built to get this binary:
 -------------------------------------------------------------------------------
-[your url here]
+[https://github.com/rhboot/shim/tree/0.8/]
 
 -------------------------------------------------------------------------------
 What patches are being applied and why:
 -------------------------------------------------------------------------------
-[your text here]
+[https://github.com/rhboot/shim/tree/0.8/]
 
 -------------------------------------------------------------------------------
 What OS and toolchain must we use to reproduce this build?  Include where to find it, etc.  We're going to try to reproduce your build as close as possible to verify that it's really a build of the source tree you tell us it is, so these need to be fairly thorough. At the very least include the specific versions of gcc, binutils, and gnu-efi which were used, and where to find those binaries.
 -------------------------------------------------------------------------------
-[your text here]
+[It's done on something very close to the Fedora 25. It can be built from the mock configure file at https://github.com/cxy-uestc/shim-review/tree/nsdl-3.0/nsdl-v3-x86_64.cfg plus the yum repo at https://github.com/cxy-uestc/shim-review/tree/nsdl-3.0/nsdl-3.0-shim-build-deps. nsdl-v3-x86_64.cfg can be used to reproduce the entire build using the release tarball from github. 
+step1:create a user and its password in Fedora; 
+step2:sudo dnf install mock with softwarecenter in /etc/yum.repos.d/
+step3:build shim.src.rpm with shim tarball and shim.spec 
+     mkdir shim/SOURCES shim/SPECS
+     mv shim.tar shim/SOURCES/
+     mv shim.spec shim/SPECS
+     cd shim  & sudo rpmbuild -bs SPECS/*.spec --define="_topdir `pwd`"
+step4:sudo mock -r nsdl-v3-x86_64 --rebuild shim-0.8-1.fc25.src.rpm --no-clean --no-cleanup-after
+step5:shim binay package, build.log and root.log can be found at /DESKTOP/mock/nsdl-v3-X86_64/result/ ]
 
 -------------------------------------------------------------------------------
 Which files in this repo are the logs for your build?   This should include logs for creating the buildroots, applying patches, doing the build, creating the archives, etc.
 -------------------------------------------------------------------------------
-[your text here]
+[build.log]
 
 -------------------------------------------------------------------------------
 Add any additional information you think we may need to validate this shim
 -------------------------------------------------------------------------------
-[your text here]
+[root.log]
