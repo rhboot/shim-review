@@ -61,21 +61,19 @@ URL for a repo that contains the exact code which was built to get this binary:
 -------------------------------------------------------------------------------
 What patches are being applied and why:
 -------------------------------------------------------------------------------
-[https://github.com/rhboot/shim/tree/0.8/]
+[None]
 
 -------------------------------------------------------------------------------
 What OS and toolchain must we use to reproduce this build?  Include where to find it, etc.  We're going to try to reproduce your build as close as possible to verify that it's really a build of the source tree you tell us it is, so these need to be fairly thorough. At the very least include the specific versions of gcc, binutils, and gnu-efi which were used, and where to find those binaries.
 -------------------------------------------------------------------------------
-[It's done on something very close to the Fedora 25. It can be built from the mock configure file at https://github.com/cxy-uestc/shim-review/tree/nsdl-3.0/nsdl-v3-x86_64.cfg plus the yum repo at https://github.com/cxy-uestc/shim-review/tree/nsdl-3.0/nsdl-3.0-shim-build-deps. nsdl-v3-x86_64.cfg can be used to reproduce the entire build using the release tarball from github. 
-step1:create a user and its password in Fedora; 
-step2:sudo dnf install mock with softwarecenter in /etc/yum.repos.d/
-step3:build shim.src.rpm with shim tarball and shim.spec 
-     mkdir shim/SOURCES shim/SPECS
-     mv shim.tar shim/SOURCES/
-     mv shim.spec shim/SPECS
-     cd shim  & sudo rpmbuild -bs SPECS/*.spec --define="_topdir `pwd`"
-step4:sudo mock -r nsdl-v3-x86_64 --rebuild shim-0.8-1.fc25.src.rpm --no-clean --no-cleanup-after
-step5:shim binay package, build.log and root.log can be found at /DESKTOP/mock/nsdl-v3-X86_64/result/ ]
+[It's done on something very close to the Fedora 25. http://mirrors.gd-linux.com/newstart-cd/x86_64/NSDL-V3.2.2rc5-x86_64.iso It can be built from the mock configure file at https://github.com/cxy-uestc/shim-review/tree/nsdl-3.0/nsdl-v3-x86_64.cfg plus the yum repo softwarecenter.repo. nsdl-v3-x86_64.cfg can be used to reproduce the entire build using shim-0.8-1.fc25.src.rpm from github. 
+step1:create a user and its password in Fedora 25 or NSDL-V3.2.2rc5; 
+step2:sudo dnf install mock with softwarecenter.repo under /etc/yum.repos.d/ 
+step3:sudo mock -r nsdl-v3-x86_64 --rebuild shim-0.8-1.fc25.src.rpm --no-clean --no-cleanup-after
+step4:shim binay package, build.log and root.log can be found at /DESKTOP/mock/nsdl-v3-X86_64/result/ 
+note:
+gcc, binutils and gnu-efi required package etc is OK if you follow the steps above]
+
 
 -------------------------------------------------------------------------------
 Which files in this repo are the logs for your build?   This should include logs for creating the buildroots, applying patches, doing the build, creating the archives, etc.

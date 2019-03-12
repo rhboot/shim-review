@@ -1,0 +1,12 @@
+[nsdl-os]
+name=nsdl-os
+baseurl=http://mirrors.gd-linux.com/community/v3.1/newstart/desktop-x86/os/
+enabled=1
+gpgcheck=0
+
+[nsdl-update]
+name=nsdl-update
+baseurl=http://mirrors.gd-linux.com/community/v3.1/newstart/desktop-x86/update/
+enabled=1
+gpgcheck=0
+
