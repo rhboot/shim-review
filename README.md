@@ -42,11 +42,11 @@ linux community:https://github.com/cxy-uestc/shim-review/tree/nsdl-3.0/chen.pub
 -------------------------------------------------------------------------------
 Who is the secondary contact for security updates, etc.
 -------------------------------------------------------------------------------
-- Name:Gaoying
+- Name:Yu Yaying
 - Position:Engineer
-- Email address:gao.ying101@zte.com.cn
+- Email address:yu.yaying@zte.com.cn
 - PGP key, signed by the other security contacts, and preferably also with signatures that are reasonably well known in the linux community:
-linux community:https://github.com/cxy-uestc/shim-review/tree/nsdl-3.0/gao.pub
+linux community:https://github.com/cxy-uestc/shim-review/tree/nsdl-3.0/yu.pub
 
 -------------------------------------------------------------------------------
 What upstream shim tag is this starting from:
