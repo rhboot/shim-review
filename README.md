@@ -97,7 +97,7 @@ available in public with anonymous access for verification
 [your text here]
 
 -------------------------------------------------------------------------------
-What OS and toolchain must we use to reproduce this build?  Include where to find it, etc.  We're going to try to reproduce your build as close as possible to verify that it's really a build of the source tree you tell us it is, so these need to be fairly thorough. At the very least include the specific versions of gcc, binutils, and gnu-efi which were used, and where to find those binaries.
+What OS and toolchain must we use to reproduce this build?  Include where to find it, etc.  We're going to try to reproduce your build as close as possible to verify that it's really a build of the source tree you tell us it is, so these need to be fairly thorough. At the very least include the specific versions of gcc, binutils, and gnu-efi which were used, and where to find those binaries. Include a Dockerfile to build it unless you have very good reasons it's not possible.
 -------------------------------------------------------------------------------
 [your text here]
 
