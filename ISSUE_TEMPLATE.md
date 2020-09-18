@@ -37,9 +37,6 @@ Make sure you have provided the following information:
 ###### if SHIM is loading grub2 bootloader, is CVE CVE-2020-10713 fixed ?
 `[your text here]`
 
-##### Were your old SHIM hashes provided to Microsoft ?
-`[your text here]`
-
 ##### Did you change your certificate strategy, so that affected by CVE CVE-2020-10713 grub2 bootloaders can not be verified ?
 `[your text here]`
 
