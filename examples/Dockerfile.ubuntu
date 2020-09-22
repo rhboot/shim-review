@@ -1,0 +1,17 @@
+FROM ubuntu:focal
+
+COPY . /shim-review
+RUN sed -i 's/# deb-src/deb-src/' /etc/apt/sources.list && \
+    apt update -y && \
+    DEBIAN_FRONTEND=noninteractive apt install -y devscripts git-buildpackage software-properties-common && \
+    apt build-dep -y shim
+
+RUN git clone https://git.launchpad.net/~ubuntu-core-dev/shim/+git/shim		# your shim source tree
+WORKDIR /shim
+RUN gbp buildpackage -us -uc
+WORKDIR /
+
+# FIXME: This only works on x86-64 efi binary
+RUN hexdump -Cv /shim-review/shimx64.efi > orig && \
+    hexdump -Cv /shim/shimx64.efi > build && \
+    diff -u orig build
