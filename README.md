@@ -70,10 +70,18 @@ If bootloader, shim loading is, grub2: is CVE-2020-10713 fixed ?
 
 -------------------------------------------------------------------------------
 If bootloader, shim loading is, grub2, and previous shims were trusting affected
-by CVE-2020-10713 grub2:
+by CVE-2020-14372, CVE-2020-25632, CVE-2020-25647, CVE-2020-27749,
+  CVE-2020-27779, CVE-2021-20225, CVE-2021-20233, CVE-2020-10713,
+  CVE-2020-14308, CVE-2020-14309, CVE-2020-14310, CVE-2020-14311, CVE-2020-15705
+  ( July 2020 grub2 CVE list + March 2021 grub2 CVE list )
+  grub2:
 * were old shims hashes provided to Microsoft for verification
   and to be added to future DBX update ?
-* Does your new chain of trust disallow booting old, affected by CVE-2020-10713,
+* Does your new chain of trust disallow booting old, affected by CVE-2020-14372,
+  CVE-2020-25632, CVE-2020-25647, CVE-2020-27749,
+  CVE-2020-27779, CVE-2021-20225, CVE-2021-20233, CVE-2020-10713,
+  CVE-2020-14308, CVE-2020-14309, CVE-2020-14310, CVE-2020-14311, CVE-2020-15705
+  ( July 2020 grub2 CVE list + March 2021 grub2 CVE list )
   grub2 builds ?
 -------------------------------------------------------------------------------
 [your text here]

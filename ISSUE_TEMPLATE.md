@@ -34,10 +34,21 @@ Make sure you have provided the following information:
 ###### Is kernel upstream commit 75b0cea7bf307f362057cc778efe89af4c615354 present in your kernel, if you boot chain includes a linux kernel ?
 `[your text here]`
 
-###### if SHIM is loading grub2 bootloader, is CVE CVE-2020-10713 fixed ?
+###### if SHIM is loading grub2 bootloader, are CVEs CVE-2020-14372,
+###### CVE-2020-25632, CVE-2020-25647, CVE-2020-27749, CVE-2020-27779,
+###### CVE-2021-20225, CVE-2021-20233, CVE-2020-10713, CVE-2020-14308,
+###### CVE-2020-14309, CVE-2020-14310, CVE-2020-14311, CVE-2020-15705
+###### ( July 2020 grub2 CVE list + March 2021 grub2 CVE list )
+###### fixed ?
 `[your text here]`
 
-##### Did you change your certificate strategy, so that affected by CVE CVE-2020-10713 grub2 bootloaders can not be verified ?
+##### Were your old SHIM hashes provided to Microsoft ?
+`[your text here]`
+
+##### Did you change your certificate strategy, so that affected by CVE-2020-14372, CVE-2020-25632, CVE-2020-25647, CVE-2020-27749,
+##### CVE-2020-27779, CVE-2021-20225, CVE-2021-20233, CVE-2020-10713,
+##### CVE-2020-14308, CVE-2020-14309, CVE-2020-14310, CVE-2020-14311, CVE-2020-15705 ( July 2020 grub2 CVE list + March 2021 grub2 CVE list )
+##### grub2 bootloaders can not be verified ?
 `[your text here]`
 
 ###### What is the origin and full version number of your bootloader (GRUB or other)?
