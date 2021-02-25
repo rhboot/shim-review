@@ -42,6 +42,11 @@ Make sure you have provided the following information:
 ###### fixed ?
 `[your text here]`
 
+###### "Please specifically confirm that you add a vendor specific SBAT entry for SBAT header in each binary that supports SBAT metadata
+###### ( grub2, fwupd, fwupdate, shim + all child shim binaries )" to shim review doc ?
+###### Please provide exact SBAT entries for all SBAT binaries you are booting or planning to boot directly through shim
+`[your text here]`
+
 ##### Were your old SHIM hashes provided to Microsoft ?
 `[your text here]`
 
@@ -51,10 +56,19 @@ Make sure you have provided the following information:
 ##### grub2 bootloaders can not be verified ?
 `[your text here]`
 
+
+##### What exact implementation of Secureboot in grub2 ( if this is your bootloader ) you have ?
+##### * Upstream grub2 shim_lock verifier or * Downstream RHEL/Fedora/Debian/Canonical like implementation ?
+`[your text here]`
+
 ###### What is the origin and full version number of your bootloader (GRUB or other)?
 `[your text here]`
 
 ###### If your SHIM launches any other components, please provide further details on what is launched
+`[your text here]`
+
+###### If your GRUB launches any other binaries that are not Linux kernel in SecureBoot mode,
+###### please provide further details on what is launched and how it enforces Secureboot lockdown
 `[your text here]`
 
 ###### How do the launched components prevent execution of unauthenticated code?

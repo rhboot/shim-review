@@ -64,7 +64,17 @@ What patches are being applied and why:
 [your text here]
 
 -------------------------------------------------------------------------------
-If bootloader, shim loading is, grub2: is CVE-2020-10713 fixed ?
+If bootloader, shim loading is, grub2: is CVE-2020-14372, CVE-2020-25632,
+ CVE-2020-25647, CVE-2020-27749, CVE-2020-27779, CVE-2021-20225, CVE-2021-20233,
+ CVE-2020-10713, CVE-2020-14308, CVE-2020-14309, CVE-2020-14310, CVE-2020-14311,
+ CVE-2020-15705
+-------------------------------------------------------------------------------
+[your text here]
+
+
+-------------------------------------------------------------------------------
+What exact implementation of Secureboot in grub2 ( if this is your bootloader ) you have ?
+* Upstream grub2 shim_lock verifier or * Downstream RHEL/Fedora/Debian/Canonical like implementation ?
 -------------------------------------------------------------------------------
 [your text here]
 
