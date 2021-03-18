@@ -38,8 +38,8 @@ Make sure you have provided the following information:
 ###### CVE-2020-25632, CVE-2020-25647, CVE-2020-27749, CVE-2020-27779,
 ###### CVE-2021-20225, CVE-2021-20233, CVE-2020-10713, CVE-2020-14308,
 ###### CVE-2020-14309, CVE-2020-14310, CVE-2020-14311, CVE-2020-15705,
-###### CVE-2021-3418
 ###### ( July 2020 grub2 CVE list + March 2021 grub2 CVE list )
+###### and if you are shipping the shim_lock module CVE-2021-3418
 ###### fixed ?
 `[your text here]`
 

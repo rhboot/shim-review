@@ -67,7 +67,7 @@ What patches are being applied and why:
 If bootloader, shim loading is, grub2: is CVE-2020-14372, CVE-2020-25632,
  CVE-2020-25647, CVE-2020-27749, CVE-2020-27779, CVE-2021-20225, CVE-2021-20233,
  CVE-2020-10713, CVE-2020-14308, CVE-2020-14309, CVE-2020-14310, CVE-2020-14311,
- CVE-2020-15705, CVE-2021-3418
+ CVE-2020-15705, and if you are shipping the shim_lock module CVE-2021-3418
 -------------------------------------------------------------------------------
 [your text here]
 
@@ -83,7 +83,7 @@ If bootloader, shim loading is, grub2, and previous shims were trusting affected
 by CVE-2020-14372, CVE-2020-25632, CVE-2020-25647, CVE-2020-27749,
   CVE-2020-27779, CVE-2021-20225, CVE-2021-20233, CVE-2020-10713,
   CVE-2020-14308, CVE-2020-14309, CVE-2020-14310, CVE-2020-14311, CVE-2020-15705,
-  CVE-2021-3418
+  and if you were shipping the shim_lock module CVE-2021-3418
   ( July 2020 grub2 CVE list + March 2021 grub2 CVE list )
   grub2:
 * were old shims hashes provided to Microsoft for verification
@@ -92,7 +92,7 @@ by CVE-2020-14372, CVE-2020-25632, CVE-2020-25647, CVE-2020-27749,
   CVE-2020-25632, CVE-2020-25647, CVE-2020-27749,
   CVE-2020-27779, CVE-2021-20225, CVE-2021-20233, CVE-2020-10713,
   CVE-2020-14308, CVE-2020-14309, CVE-2020-14310, CVE-2020-14311, CVE-2020-15705,
-  CVE-2021-3418
+  and if you were shipping the shim_lock module CVE-2021-3418
   ( July 2020 grub2 CVE list + March 2021 grub2 CVE list )
   grub2 builds ?
 -------------------------------------------------------------------------------
