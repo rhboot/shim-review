@@ -49,10 +49,10 @@ Who is the secondary contact for security updates, etc.
 - PGP key, signed by the other security contacts, and preferably also with signatures that are reasonably well known in the Linux community:
 
 -------------------------------------------------------------------------------
-Please create your shim binaries starting with the 15.3 shim release tar file:
-https://github.com/rhboot/shim/releases/download/15.3/shim-15.3.tar.bz2
+Please create your shim binaries starting with the 15.4 shim release tar file:
+https://github.com/rhboot/shim/releases/download/15.4/shim-15.4.tar.bz2
 
-This matches https://github.com/rhboot/shim/releases/tag/15.3 and contains
+This matches https://github.com/rhboot/shim/releases/tag/15.4 and contains
 the appropriate gnu-efi source.
 -------------------------------------------------------------------------------
 [Please confirm]

@@ -16,9 +16,9 @@ Make sure you have provided the following information:
 ###### What product or service is this for:
 `[your text here]`
 
-###### Please create your shim binaries starting with the 15.3 shim release tar file:
-###### https://github.com/rhboot/shim/releases/download/15.3/shim-15.3.tar.bz2
-###### This matches https://github.com/rhboot/shim/releases/tag/15.3 and contains
+###### Please create your shim binaries starting with the 15.4 shim release tar file:
+###### https://github.com/rhboot/shim/releases/download/15.4/shim-15.4.tar.bz2
+###### This matches https://github.com/rhboot/shim/releases/tag/15.4 and contains
 ###### the appropriate gnu-efi source.
 ###### Please confirm this as the origin your shim.
 `[your text here]`
