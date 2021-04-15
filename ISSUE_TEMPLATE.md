@@ -8,6 +8,7 @@ Make sure you have provided the following information:
  - [ ] any extra patches to shim via your own git tree or as files
  - [ ] any extra patches to grub via your own git tree or as files
  - [ ] build logs
+ - [ ] a Dockerfile to reproduce the build of the provided shim EFI binaries
 
 
 ###### What organization or people are asking to have this signed:
