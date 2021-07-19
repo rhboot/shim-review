@@ -51,6 +51,7 @@ Make sure you have provided the following information:
 ###### "Please specifically confirm that you add a vendor specific SBAT entry for SBAT header in each binary that supports SBAT metadata
 ###### ( grub2, fwupd, fwupdate, shim + all child shim binaries )" to shim review doc ?
 ###### Please provide exact SBAT entries for all SBAT binaries you are booting or planning to boot directly through shim
+###### Where your code is only slightly modified from an upstream vendor's, please also preserve their SBAT entries to simplify revocation
 `[your text here]`
 
 ##### Were your old SHIM hashes provided to Microsoft ?
