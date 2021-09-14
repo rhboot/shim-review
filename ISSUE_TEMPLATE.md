@@ -11,12 +11,12 @@ Make sure you have provided the following information:
  - [ ] a Dockerfile to reproduce the build of the provided shim EFI binaries
 
 -------------------------------------------------------------------------------
-### What organization or people are asking to have this signed:
+### What organization or people are asking to have this signed?
 -------------------------------------------------------------------------------
 `[your text here]`
 
 -------------------------------------------------------------------------------
-### What product or service is this for:
+### What product or service is this for?
 -------------------------------------------------------------------------------
 `[your text here]`
 
@@ -28,7 +28,7 @@ Make sure you have provided the following information:
 `[your text here]`
 
 -------------------------------------------------------------------------------
-### What's the justification that this really does need to be signed for the whole world to be able to boot it:
+### What's the justification that this really does need to be signed for the whole world to be able to boot it?
 -------------------------------------------------------------------------------
 `[your text here]`
 
@@ -43,7 +43,8 @@ Make sure you have provided the following information:
 `[your text here]`
 
 -------------------------------------------------------------------------------
-### If you use new vendor_db functionality, are any hashes allow-listed, and if yes: for what binaries ?
+### If you use new vendor_db functionality, are any hashes allow-listed?
+### If yes: for what binaries?
 -------------------------------------------------------------------------------
 `[your text here]`
 
@@ -91,17 +92,18 @@ Make sure you have provided the following information:
 `[your text here]`
 
 -------------------------------------------------------------------------------
-### If your SHIM launches any other components, please provide further details on what is launched
+### If your SHIM launches any other components, please provide further details on what is launched.
 -------------------------------------------------------------------------------
 `[your text here]`
 
 -------------------------------------------------------------------------------
-### If your GRUB2 launches any other binaries that are not Linux kernel in SecureBoot mode, please provide further details on what is launched and how it enforces Secureboot lockdown
+### If your GRUB2 launches any other binaries that are not the Linux kernel in SecureBoot mode, please provide further details on what is launched and how it enforces Secureboot lockdown.
 -------------------------------------------------------------------------------
 `[your text here]`
 
 -------------------------------------------------------------------------------
-### If you are re-using a previously used (CA) certificate, you will need to add the hashes of the previous GRUB2 binaries exposed to the CVEs to vendor_dbx in shim in order to prevent GRUB2 from being able to chainload those older GRUB2 binaries. If you are changing to a new (CA) certificate, this does not apply. Please describe your strategy.
+### If you are re-using a previously used (CA) certificate, you will need to add the hashes of the previous GRUB2 binaries exposed to the CVEs to vendor_dbx in shim in order to prevent GRUB2 from being able to chainload those older GRUB2 binaries. If you are changing to a new (CA) certificate, this does not apply.
+### Please describe your strategy.
 -------------------------------------------------------------------------------
 `[your text here]`
 
