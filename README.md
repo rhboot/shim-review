@@ -38,7 +38,11 @@ Who is the primary contact for security updates, etc.
 - Name:
 - Position:
 - Email address:
-- PGP key, signed by the other security contacts, and preferably also with signatures that are reasonably well known in the Linux community:
+- PGP key fingerprint:
+
+(Key should be signed by the other security contacts, pushed to a keyserver
+like keyserver.ubuntu.com, and preferably have signatures that are reasonably
+well known in the Linux community.)
 
 -------------------------------------------------------------------------------
 Who is the secondary contact for security updates, etc.
@@ -46,7 +50,11 @@ Who is the secondary contact for security updates, etc.
 - Name:
 - Position:
 - Email address:
-- PGP key, signed by the other security contacts, and preferably also with signatures that are reasonably well known in the Linux community:
+- PGP key fingerprint:
+
+(Key should be signed by the other security contacts, pushed to a keyserver
+like keyserver.ubuntu.com, and preferably have signatures that are reasonably
+well known in the Linux community.)
 
 -------------------------------------------------------------------------------
 Please create your shim binaries starting with the 15.4 shim release tar file:
