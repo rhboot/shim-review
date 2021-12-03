@@ -66,6 +66,9 @@ Make sure you have provided the following information:
 ##### * Upstream grub2 shim_lock verifier or * Downstream RHEL/Fedora/Debian/Canonical like implementation ?
 `[your text here]`
 
+##### Which modules are built into your signed grub image?
+`[your text here]`
+
 ###### What is the origin and full version number of your bootloader (GRUB or other)?
 `[your text here]`
 
