@@ -8,8 +8,8 @@ This repo is for review of requests for signing shim.  To create a request for r
 - commit all of that
 - tag it with a tag of the form "myorg-shim-arch-YYYYMMDD"
 - push that to github
-- file an issue at https://github.com/rhboot/shim-review/issues with a link to your branch
-- approval is ready when you have accepted tag
+- file an issue at https://github.com/rhboot/shim-review/issues with a link to your tag
+- approval is ready when the "accepted" label is added to your issue
 
 Note that we really only have experience with using GRUB2 on Linux, so asking
 us to endorse anything else for signing is going to require some convincing on
