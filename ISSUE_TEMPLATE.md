@@ -1,6 +1,5 @@
-Make sure you have provided the following information:
+Confirm the following are included in your repo, checking each box:
 
- - [ ] link to your code branch cloned from rhboot/shim-review in the form user/repo@tag
  - [ ] completed README.md file with the necessary information
  - [ ] shim.efi to be signed
  - [ ] public portion of your certificate(s) embedded in shim (the file passed to VENDOR_CERT_FILE)
@@ -9,3 +8,13 @@ Make sure you have provided the following information:
  - [ ] any extra patches to grub via your own git tree or as files
  - [ ] build logs
  - [ ] a Dockerfile to reproduce the build of the provided shim EFI binaries
+
+-------------------------------------------------------------------------------
+### What is the link to your tag in a repo cloned from rhboot/shim-review?
+-------------------------------------------------------------------------------
+`https://github.com/user/shim-review/tree/myorg-shim-arch-YYYYMMDD`
+
+-------------------------------------------------------------------------------
+### What is the SHA256 hash of your final SHIM binary?
+-------------------------------------------------------------------------------
+[your text here]
