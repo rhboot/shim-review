@@ -57,10 +57,10 @@ like keyserver.ubuntu.com, and preferably have signatures that are reasonably
 well known in the Linux community.)
 
 -------------------------------------------------------------------------------
-### Were these binaries created from the 15.5 shim release tar?
-Please create your shim binaries starting with the 15.5 shim release tar file: https://github.com/rhboot/shim/releases/download/15.5/shim-15.5.tar.bz2
+### Were these binaries created from the 15.6 shim release tar?
+Please create your shim binaries starting with the 15.6 shim release tar file: https://github.com/rhboot/shim/releases/download/15.6/shim-15.6.tar.bz2
 
-This matches https://github.com/rhboot/shim/releases/tag/15.5 and contains the appropriate gnu-efi source.
+This matches https://github.com/rhboot/shim/releases/tag/15.6 and contains the appropriate gnu-efi source.
 
 -------------------------------------------------------------------------------
 [your text here]
@@ -81,7 +81,7 @@ This matches https://github.com/rhboot/shim/releases/tag/15.5 and contains the a
 [your text here]
 
 -------------------------------------------------------------------------------
-### If shim is loading GRUB2 bootloader and your previously released shim booted a version of grub affected by any of the CVEs in the July 2020 grub2 CVE list or the March 2021 grub2 CVE list:
+### If shim is loading GRUB2 bootloader and your previously released shim booted a version of grub affected by any of the CVEs in the July 2020 grub2 CVE list, the March 2021 grub2 CVE list or the June 7th 2022 grub2 CVE list:
 * CVE-2020-14372
 * CVE-2020-25632
 * CVE-2020-25647
@@ -97,6 +97,16 @@ This matches https://github.com/rhboot/shim/releases/tag/15.5 and contains the a
 * CVE-2020-15705
 * CVE-2021-3418 (if you are shipping the shim_lock module)
 
+* CVE-2021-3695
+* CVE-2021-3696
+* CVE-2021-3697
+* CVE-2022-28733
+* CVE-2022-28734
+* CVE-2022-28735
+* CVE-2022-28736
+* CVE-2022-28737
+
+
 ### Were old shims hashes provided to Microsoft for verification and to be added to future DBX updates?
 ### Does your new chain of trust disallow booting old GRUB2 builds affected by the CVEs?
 -------------------------------------------------------------------------------
@@ -106,6 +116,8 @@ This matches https://github.com/rhboot/shim/releases/tag/15.5 and contains the a
 ### If your boot chain of trust includes a Linux kernel:
 ### Is upstream commit [1957a85b0032a81e6482ca4aab883643b8dae06e "efi: Restrict efivar_ssdt_load when the kernel is locked down"](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=1957a85b0032a81e6482ca4aab883643b8dae06e) applied?
 ### Is upstream commit [75b0cea7bf307f362057cc778efe89af4c615354 "ACPI: configfs: Disallow loading ACPI tables when locked down"](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=75b0cea7bf307f362057cc778efe89af4c615354) applied?
+### Is upstream commit [eadb2f47a3ced5c64b23b90fd2a3463f63726066 "lockdown: also lock down previous kgdb use"](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=eadb2f47a3ced5c64b23b90fd2a3463f63726066) applied?
+
 -------------------------------------------------------------------------------
 [your text here]
 
