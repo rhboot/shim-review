@@ -81,7 +81,7 @@ This matches https://github.com/rhboot/shim/releases/tag/15.6 and contains the a
 [your text here]
 
 -------------------------------------------------------------------------------
-### If shim is loading GRUB2 bootloader and your previously released shim booted a version of grub affected by any of the CVEs in the July 2020 grub2 CVE list, the March 2021 grub2 CVE list or the June 7th 2022 grub2 CVE list:
+### If shim is loading GRUB2 bootloader and your previously released shim booted a version of grub affected by any of the CVEs in the July 2020 grub2 CVE list, the March 2021 grub2 CVE list, or the June 7th 2022 grub2 CVE list:
 * CVE-2020-14372
 * CVE-2020-25632
 * CVE-2020-25647
@@ -105,7 +105,6 @@ This matches https://github.com/rhboot/shim/releases/tag/15.6 and contains the a
 * CVE-2022-28735
 * CVE-2022-28736
 * CVE-2022-28737
-
 
 ### Were old shims hashes provided to Microsoft for verification and to be added to future DBX updates?
 ### Does your new chain of trust disallow booting old GRUB2 builds affected by the CVEs?
