@@ -34,6 +34,11 @@ Here's the template:
 
 -------------------------------------------------------------------------------
 ### Who is the primary contact for security updates, etc.?
+The security contacts need to be verified before the shim can be accepted. For subsequent requests, contact verification is only necessary if the security contacts or their PGP keys have changed since the last successful verification.
+
+An authorized reviewer will initiate contact verification by sending each security contact a PGP-encrypted email containing random words.
+You will be asked to post the contents of these mails in your `shim-review` issue to prove ownership of the email addresses and PGP keys.
+
 -------------------------------------------------------------------------------
 - Name:
 - Position:
