@@ -18,3 +18,8 @@ Confirm the following are included in your repo, checking each box:
 ### What is the SHA256 hash of your final SHIM binary?
 -------------------------------------------------------------------------------
 [your text here]
+
+-------------------------------------------------------------------------------
+### What is the link to your previous shim review request (if any, otherwise N/A)?
+-------------------------------------------------------------------------------
+[your text here]
