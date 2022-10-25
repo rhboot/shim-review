@@ -33,6 +33,11 @@ Here's the template:
 [your text here]
 
 -------------------------------------------------------------------------------
+### Why are you unable to reuse shim from another distro that is already signed?
+-------------------------------------------------------------------------------
+[your text here]
+
+-------------------------------------------------------------------------------
 ### Who is the primary contact for security updates, etc.?
 The security contacts need to be verified before the shim can be accepted. For subsequent requests, contact verification is only necessary if the security contacts or their PGP keys have changed since the last successful verification.
 
