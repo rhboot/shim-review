@@ -254,7 +254,7 @@ serial sleep syslinuxcfg test tftp video xfs
 ### What is the origin and full version number of your bootloader (GRUB or other)?
 -------------------------------------------------------------------------------
 grub2-2.02-123.el8
-https://github.com/LiangJianNSDL/shim-review/blob/nsdl-v4-shim-20221028/grub2-2.02-123.el8.src.rpm
+https://github.com/LiangJianNSDL/shim-review/blob/nsdl-v4-shim-amd64-i386/grub2-2.02-123.el8.src.rpm
 
 -------------------------------------------------------------------------------
 ### If your SHIM launches any other components, please provide further details on what is launched.
