@@ -72,6 +72,8 @@ Please create your shim binaries starting with the 15.6 shim release tar file: h
 
 This matches https://github.com/rhboot/shim/releases/tag/15.6 and contains the appropriate gnu-efi source.
 
+And have you included the the SBAT generation requirements from 2022111500?
+
 -------------------------------------------------------------------------------
 [your text here]
 
@@ -91,7 +93,8 @@ This matches https://github.com/rhboot/shim/releases/tag/15.6 and contains the a
 [your text here]
 
 -------------------------------------------------------------------------------
-### If shim is loading GRUB2 bootloader and your previously released shim booted a version of grub affected by any of the CVEs in the July 2020 grub2 CVE list, the March 2021 grub2 CVE list, or the June 7th 2022 grub2 CVE list:
+### If shim is loading GRUB2 bootloader and your previously released shim booted a version of grub affected by any of the CVEs in the July 2020 grub2 CVE list, the March 2021 grub2 CVE list, the June 7th 2022 grub2 CVE list, or the November 15th 2022 list, have fixes for all these CVEs been applied?
+
 * CVE-2020-14372
 * CVE-2020-25632
 * CVE-2020-25647
@@ -115,6 +118,17 @@ This matches https://github.com/rhboot/shim/releases/tag/15.6 and contains the a
 * CVE-2022-28735
 * CVE-2022-28736
 * CVE-2022-28737
+
+* CVE-2022-2601
+* CVE-2022-3775
+-------------------------------------------------------------------------------
+[your text here]
+
+-------------------------------------------------------------------------------
+### If these fixes have been applied, have you set the global SBAT generation on your GRUB binary to 3?
+
+-------------------------------------------------------------------------------
+[your text here]
 
 ### Were old shims hashes provided to Microsoft for verification and to be added to future DBX updates?
 ### Does your new chain of trust disallow booting old GRUB2 builds affected by the CVEs?
