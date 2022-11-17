@@ -67,12 +67,10 @@ like keyserver.ubuntu.com, and preferably have signatures that are reasonably
 well known in the Linux community.)
 
 -------------------------------------------------------------------------------
-### Were these binaries created from the 15.6 shim release tar?
-Please create your shim binaries starting with the 15.6 shim release tar file: https://github.com/rhboot/shim/releases/download/15.6/shim-15.6.tar.bz2
+### Were these binaries created from the 15.7 shim release tar?
+Please create your shim binaries starting with the 15.7 shim release tar file: https://github.com/rhboot/shim/releases/download/15.7/shim-15.7.tar.bz2
 
-This matches https://github.com/rhboot/shim/releases/tag/15.6 and contains the appropriate gnu-efi source.
-
-And have you included the the SBAT generation requirements from 2022111500?
+This matches https://github.com/rhboot/shim/releases/tag/15.7 and contains the appropriate gnu-efi source.
 
 -------------------------------------------------------------------------------
 [your text here]
