@@ -23,3 +23,8 @@ Confirm the following are included in your repo, checking each box:
 ### What is the link to your previous shim review request (if any, otherwise N/A)?
 -------------------------------------------------------------------------------
 [your text here]
+
+-------------------------------------------------------------------------------
+### Has your organization recently reviewed at least one other submission?
+-------------------------------------------------------------------------------
+[your text here]
