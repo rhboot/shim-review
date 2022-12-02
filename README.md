@@ -20,7 +20,7 @@ Here's the template:
 -------------------------------------------------------------------------------
 ### What organization or people are asking to have this signed?
 -------------------------------------------------------------------------------
-Guangdong Zhongxing Newstart Technology Co. ,Ltd
+Guangdong ZTE NewStart Technology Co. ,Ltd
 
 -------------------------------------------------------------------------------
 ### What product or service is this for?
@@ -231,13 +231,15 @@ No.
 -------------------------------------------------------------------------------
 shim:
 sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
-shim,1,UEFI shim,shim,1,https://github.com/rhboot/shim
-shim.NewStartOS,1,NewStart,shim,15.5,mail:os@gd-linux.com
+shim,2,UEFI shim,shim,1,https://github.com/rhboot/shim
+shim.NewStartOS,1,NewStart,shim,15.6,mail:os@gd-linux.com
 
 grub:
 sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
-grub,1,Free Software Foundation,grub,2.02,https://www.gnu.org/software/grub/
-grub.NewStartOS,1,NewStart,grub2,2.02-123,mail:os@gd-linux.com
+grub,2,Free Software Foundation,grub,2.02,https://www.gnu.org/software/grub/
+grub.rhel8,2,Red Hat Enterprise Linux 8,2.02-123.el8,mail:secalert@redhat.com
+grub.rocky8,2,Rocky Linux 8,grub2,2.02-123.el8,mail:security@rockylinux.org
+grub.NewStartOS,1,NewStart,grub2,2.02-123.el8,mail:os@gd-linux.com
 
 -------------------------------------------------------------------------------
 ### Which modules are built into your signed grub image?
@@ -259,7 +261,7 @@ https://github.com/LiangJianNSDL/shim-review/blob/nsdl-v4-shim-amd64-i386/grub2-
 -------------------------------------------------------------------------------
 ### If your SHIM launches any other components, please provide further details on what is launched.
 -------------------------------------------------------------------------------
-The Shim only launches GRUB2.
+The shim only launches GRUB2.
 
 -------------------------------------------------------------------------------
 ### If your GRUB2 launches any other binaries that are not the Linux kernel in SecureBoot mode, please provide further details on what is launched and how it enforces Secureboot lockdown.
