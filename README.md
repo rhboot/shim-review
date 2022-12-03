@@ -20,7 +20,7 @@ Here's the template:
 -------------------------------------------------------------------------------
 ### What organization or people are asking to have this signed?
 -------------------------------------------------------------------------------
-Guangdong Zhongxing Newstart Technology Co. ,Ltd
+Guangdong ZTE NewStart Technology Co. ,Ltd
 
 -------------------------------------------------------------------------------
 ### What product or service is this for?
@@ -209,9 +209,9 @@ New vendor - First submission.
 ### What is the SHA256 hash of your final SHIM binary?
 -------------------------------------------------------------------------------
 sha256sum shimia32.efi
-fa07390322fd0c3b913a2ea58f98e6e584b8d871025664327a9b7cfbd4cb7643  shimia32.efi
+89ea4fe5c9bd0ad07bdec54c355290b28b2fcb69745d8d10dc0b39e8aaf72dc3  shimia32.efi
 sha256sum shimx64.efi
-841a5a2d59a91b2e4fc6e2a9309cd2240833f08b9aad417cbba62f1aaf909fd2  shimx64.efi
+1e578f73ab4b253e030d66e9545b7faceb7b3f76319803f7e1330bebb1e6f08a  shimx64.efi
 
 -------------------------------------------------------------------------------
 ### How do you manage and protect the keys used in your SHIM?
@@ -231,25 +231,31 @@ No.
 -------------------------------------------------------------------------------
 shim:
 sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
-shim,1,UEFI shim,shim,1,https://github.com/rhboot/shim
-shim.NewStartOS,1,NewStart,shim,15.5,mail:os@gd-linux.com
+shim,2,UEFI shim,shim,1,https://github.com/rhboot/shim
+shim.NewStartOS,1,NewStart,shim,15.6,mail:os@gd-linux.com
 
 grub:
 sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
-grub,1,Free Software Foundation,grub,2.02,https://www.gnu.org/software/grub/
-grub.NewStartOS,1,NewStart,grub2,2.02-123,mail:os@gd-linux.com
+grub,2,Free Software Foundation,grub,2.02,https://www.gnu.org/software/grub/
+grub.rhel8,2,Red Hat Enterprise Linux 8,2.02-123.el8,mail:secalert@redhat.com
+grub.rocky8,2,Rocky Linux 8,grub2,2.02-123.el8,mail:security@rockylinux.org
+grub.NewStartOS,1,NewStart,grub2,2.02-123.el8,mail:os@gd-linux.com
 
 -------------------------------------------------------------------------------
 ### Which modules are built into your signed grub image?
 -------------------------------------------------------------------------------
-all_video boot blscfg btrfs cat configfile cryptodisk
-echo efi_netfs efifwsetup efinet ext2 fat font gcry_rijndael
-gcry_rsa gcry_serpent gcry_sha256 gcry_twofish gcry_whirlpool
-gfxmenu gfxterm gzio halt hfsplus http increment iso9660 jpeg
-loadenv loopback linux lvm lsefi lsefimmap luks mdraid09 mdraid1x
-minicmd net normal part_apple part_msdos part_gpt password_pbkdf2
-png reboot regexp search search_fs_uuid search_fs_file search_label
+all_video boot blscfg 
+cat configfile cryptodisk echo ext2         
+fat font gcry_rijndael gcry_rsa gcry_serpent   
+gcry_sha256 gcry_twofish gcry_whirlpool         
+gfxmenu gfxterm gzio halt  http                 
+increment iso9660 jpeg loadenv loopback linux   
+lvm luks mdraid09 mdraid1x minicmd net          
+normal part_apple part_msdos part_gpt           
+password_pbkdf2 png reboot regexp search        
+search_fs_uuid search_fs_file search_label      
 serial sleep syslinuxcfg test tftp video xfs
+
 -------------------------------------------------------------------------------
 ### What is the origin and full version number of your bootloader (GRUB or other)?
 -------------------------------------------------------------------------------
