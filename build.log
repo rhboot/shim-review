@@ -1,45 +1,48 @@
 Step 16/38 : RUN sed -i 's/linux32 -B/linux32/g' /builddir/build/SPECS/shim-unsigned-x64.spec
- ---> Running in b8dfadcce076
-Removing intermediate container b8dfadcce076
- ---> 3f569a37246b
+ ---> Running in 84fb4d505151
+Removing intermediate container 84fb4d505151
+ ---> 2da45f1273ce
 Step 17/38 : RUN rpmbuild -D 'dist .el8' -bb /builddir/build/SPECS/shim-unsigned-x64.spec
- ---> Running in 881485392a6b
-Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.9SIxoI
+ ---> Running in 4128ea040601
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.34rfjb
 + umask 022
-+ cd /builddir/build//BUILD                                                                                                                   
-+ cd /builddir/build/BUILD                                                                                                                    
-+ rm -rf shim-15.6                                                                                                                            
-+ /usr/bin/bzip2 -dc /builddir/build/SOURCES/shim-15.6.tar.bz2                                                                                
-+ /usr/bin/tar -xof -                                                                                                                         
-+ STATUS=0                                                                                                                                    
-+ '[' 0 -ne 0 ']'                                                                                                                             
-+ cd shim-15.6                                                                                                                                
-+ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .                                                                                                       
-+ /usr/bin/git init -q                                                                                                                        
-+ /usr/bin/git config user.name rpm-build                                                                                                     
-+ /usr/bin/git config user.email '<rpm-build>'                                                                                                
-+ /usr/bin/git add .                                                                                                                          
-+ /usr/bin/git commit -q --allow-empty -a --author 'rpm-build <rpm-build>' -m 'shim-unsigned-x64-15.6 base'                                   
-+ git config --unset user.email                                                                                                               
-+ git config --unset user.name                                                                                                                
-+ mkdir build-x64                                                                                                                             
-+ mkdir build-ia32                                                                                                                            
-+ exit 0                                                                                                                                      
-+ umask 022                                                                                                                                   
-+ cd /builddir/build//BUILD                                                                                                                   
-+ cd shim-15.6                                                                                                                                
-++ cat commit                                                                                                                                 
-Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.eD5C9Z                                                                                         
-+ COMMITID=505cdb678b319fcf9a7fdee77c0f091b4147cbe5
-+ MAKEFLAGS='TOPDIR=.. -f ../Makefile COMMITID=505cdb678b319fcf9a7fdee77c0f091b4147cbe5 '                                                     
-+ MAKEFLAGS+='EFIDIR=newstartos PKGNAME=shim RELEASE=1.el8 '                                                                                  
-+ MAKEFLAGS+='ENABLE_SHIM_HASH=true '                                                                                                         
-+ MAKEFLAGS+=                                                                                                                                 
-+ '[' -f /builddir/build/SOURCES/NSDL_pub.cer ']'                                                                                             
-+ MAKEFLAGS='TOPDIR=.. -f ../Makefile COMMITID=505cdb678b319fcf9a7fdee77c0f091b4147cbe5 EFIDIR=newstartos PKGNAME=shim RELEASE=1.el8 ENABLE_SHIM_HASH=true  VENDOR_CERT_FILE=/builddir/build/SOURCES/NSDL_pub.cer'                                                                          
-+ cd build-x64                                                                                                                                
-+ make TOPDIR=.. -f ../Makefile COMMITID=505cdb678b319fcf9a7fdee77c0f091b4147cbe5 EFIDIR=newstartos PKGNAME=shim RELEASE=1.el8 ENABLE_SHIM_HASH=true VENDOR_CERT_FILE=/builddir/build/SOURCES/NSDL_pub.cer 'DEFAULT_LOADER=\\\\grubx64.efi' all                                             
-sed     -e "s,@@VERSION@@,15.6," \                                                                                                            
++ cd /builddir/build//BUILD                                                                                                                          
++ cd /builddir/build/BUILD                                                                                                                           
++ rm -rf shim-15.6                                                                                                                                   
++ /usr/bin/tar -xof -                                                                                                                                
++ /usr/bin/bzip2 -dc /builddir/build/SOURCES/shim-15.6.tar.bz2                                                                                       
++ STATUS=0                                                                                                                                           
++ '[' 0 -ne 0 ']'                                                                                                                                    
++ cd shim-15.6                                                                                                                                       
++ /usr/bin/chmod -Rf a+rX,u+w,g-w,o-w .                                                                                                              
++ /usr/bin/git init -q                                                                                                                               
++ /usr/bin/git config user.name rpm-build                                                                                                            
++ /usr/bin/git config user.email '<rpm-build>'                                                                                                       
++ /usr/bin/git add .                                                                                                                                 
++ /usr/bin/git commit -q --allow-empty -a --author 'rpm-build <rpm-build>' -m 'shim-unsigned-x64-15.6 base'                                          
++ /usr/bin/cat /builddir/build/SOURCES/NX.patch                                                                                                      
++ /usr/bin/git apply --index -                                                                                                                       
++ /usr/bin/git commit -q -m NX.patch --author 'rpm-build <rpm-build>'                                                                                
++ git config --unset user.email                                                                                                                      
++ git config --unset user.name                                                                                                                       
++ mkdir build-x64                                                                                                                                    
++ mkdir build-ia32                                                                                                                                   
++ exit 0                                                                                                                                             
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.B8go9j                                                                                                
++ umask 022
++ cd /builddir/build//BUILD                                                                                                                          
++ cd shim-15.6                                                                                                                                       
+++ cat commit                                                                                                                                        
++ COMMITID=505cdb678b319fcf9a7fdee77c0f091b4147cbe5                                                                                                  
++ MAKEFLAGS='TOPDIR=.. -f ../Makefile COMMITID=505cdb678b319fcf9a7fdee77c0f091b4147cbe5 '                                                            
++ MAKEFLAGS+='EFIDIR=newstartos PKGNAME=shim RELEASE=1.el8 '                                                                                         
++ MAKEFLAGS+='ENABLE_SHIM_HASH=true '                                                                                                                
++ MAKEFLAGS+=                                                                                                                                        
++ '[' -f /builddir/build/SOURCES/NSDL_pub.cer ']'                                                                                                    
++ MAKEFLAGS='TOPDIR=.. -f ../Makefile COMMITID=505cdb678b319fcf9a7fdee77c0f091b4147cbe5 EFIDIR=newstartos PKGNAME=shim RELEASE=1.el8 ENABLE_SHIM_HASH=true  VENDOR_CERT_FILE=/builddir/build/SOURCES/NSDL_pub.cer'                                                                                        
++ cd build-x64                                                                                                                                       
++ make TOPDIR=.. -f ../Makefile COMMITID=505cdb678b319fcf9a7fdee77c0f091b4147cbe5 EFIDIR=newstartos PKGNAME=shim RELEASE=1.el8 ENABLE_SHIM_HASH=true VENDOR_CERT_FILE=/builddir/build/SOURCES/NSDL_pub.cer 'DEFAULT_LOADER=\\\\grubx64.efi' all                                                           
+sed     -e "s,@@VERSION@@,15.6," \                                                                                                                   
         -e "s,@@UNAME@@,Linux x86_64 x86_64 x86_64 GNU/Linux," \
         -e "s,@@COMMIT@@,master," \
         < /builddir/build/BUILD/shim-15.6/version.c.in > version.c
@@ -564,7 +567,7 @@ gcc -I/builddir/build/BUILD/shim-15.6/gnu-efi//lib -I/builddir/build/BUILD/shim-
 gcc -I/builddir/build/BUILD/shim-15.6/gnu-efi//lib -I/builddir/build/BUILD/shim-15.6/gnu-efi/inc -I/builddir/build/BUILD/shim-15.6/gnu-efi/inc/x86_64 -I/builddir/build/BUILD/shim-15.6/gnu-efi/inc/protocol -Wno-error=pragmas -mno-red-zone -mno-avx -fpic  -Os -Wall -Wextra -Wno-missing-field-initializers -Werror -fshort-wchar -fno-strict-aliasing -ffreestanding -fno-stack-protector -fno-stack-check -nostdinc   -isystem /builddir/build/BUILD/shim-15.6/gnu-efi/../include/system -isystem /usr/lib/gcc/x86_64-redhat-linux/8/include -fno-merge-all-constants -DCONFIG_x86_64 -DGNU_EFI_USE_MS_ABI -DGNU_EFI_USE_EXTERNAL_STDARG -maccumulate-outgoing-args --std=c11 -c /builddir/build/BUILD/shim-15.6/gnu-efi//lib/x86_64/efi_stub.S -o x86_64/efi_stub.o
 gcc-ar rv -U libefi.a boxdraw.o smbios.o console.o crc.o data.o debug.o dpath.o error.o event.o exit.o guid.o hand.o hw.o init.o lock.o misc.o pause.o print.o sread.o str.o cmdline.o runtime/rtlock.o runtime/efirtlib.o runtime/rtstr.o runtime/vm.o runtime/rtdata.o x86_64/initplat.o x86_64/math.o x86_64/setjmp.o x86_64/callwrap.o x86_64/efi_stub.o
 /usr/bin/ar: creating libefi.a
-a - boxdraw.o                                                                                                                                 
+a - boxdraw.o                                                                                                                                        
 a - smbios.o
 a - console.o
 a - crc.o
@@ -602,13 +605,13 @@ make[2]: Entering directory '/builddir/build/BUILD/shim-15.6/build-x64/gnu-efi/x
 gcc -I/builddir/build/BUILD/shim-15.6/gnu-efi//gnuefi -I/builddir/build/BUILD/shim-15.6/gnu-efi/inc -I/builddir/build/BUILD/shim-15.6/gnu-efi/inc/x86_64 -I/builddir/build/BUILD/shim-15.6/gnu-efi/inc/protocol -Wno-error=pragmas -mno-red-zone -mno-avx -fpic  -Os -Wall -Wextra -Wno-missing-field-initializers -Werror -fshort-wchar -fno-strict-aliasing -ffreestanding -fno-stack-protector -fno-stack-check -nostdinc   -isystem /builddir/build/BUILD/shim-15.6/gnu-efi/../include/system -isystem /usr/lib/gcc/x86_64-redhat-linux/8/include -fno-merge-all-constants -DCONFIG_x86_64 -DGNU_EFI_USE_MS_ABI -DGNU_EFI_USE_EXTERNAL_STDARG -maccumulate-outgoing-args --std=c11 -c /builddir/build/BUILD/shim-15.6/gnu-efi//gnuefi/crt0-efi-x86_64.S -o crt0-efi-x86_64.o
 gcc -I/builddir/build/BUILD/shim-15.6/gnu-efi//gnuefi -I/builddir/build/BUILD/shim-15.6/gnu-efi/inc -I/builddir/build/BUILD/shim-15.6/gnu-efi/inc/x86_64 -I/builddir/build/BUILD/shim-15.6/gnu-efi/inc/protocol -Wno-error=pragmas -mno-red-zone -mno-avx -fpic  -Os -Wall -Wextra -Wno-missing-field-initializers -Werror -fshort-wchar -fno-strict-aliasing -ffreestanding -fno-stack-protector -fno-stack-check -nostdinc   -isystem /builddir/build/BUILD/shim-15.6/gnu-efi/../include/system -isystem /usr/lib/gcc/x86_64-redhat-linux/8/include -fno-merge-all-constants -DCONFIG_x86_64 -DGNU_EFI_USE_MS_ABI -DGNU_EFI_USE_EXTERNAL_STDARG -maccumulate-outgoing-args --std=c11 -c /builddir/build/BUILD/shim-15.6/gnu-efi//gnuefi/reloc_x86_64.c -o reloc_x86_64.o
 gcc-ar rv -U libgnuefi.a reloc_x86_64.o
-a - reloc_x86_64.o
+/usr/bin/ar: creating libgnuefi.a
+a - reloc_x86_64.o                                                                                                                                   
 make[2]: Leaving directory '/builddir/build/BUILD/shim-15.6/build-x64/gnu-efi/x86_64/gnuefi'
 mkdir -p /builddir/build/BUILD/shim-15.6/build-x64/gnu-efi/x86_64/inc
 make -C /builddir/build/BUILD/shim-15.6/build-x64/gnu-efi/x86_64/inc -f /builddir/build/BUILD/shim-15.6/gnu-efi//inc/Makefile SRCDIR=/builddir/build/BUILD/shim-15.6/gnu-efi//inc ARCH=x86_64
 make[2]: Entering directory '/builddir/build/BUILD/shim-15.6/build-x64/gnu-efi/x86_64/inc'
-/usr/bin/ar: creating libgnuefi.a
-make[2]: Nothing to be done for 'all'.                                                                                                        
+make[2]: Nothing to be done for 'all'.
 make[2]: Leaving directory '/builddir/build/BUILD/shim-15.6/build-x64/gnu-efi/x86_64/inc'
 make[1]: Leaving directory '/builddir/build/BUILD/shim-15.6/build-x64/gnu-efi'
 ld -o shimx64.so --hash-style=sysv -nostdlib -znocombreloc -T /builddir/build/BUILD/shim-15.6/elf_x86_64_efi.lds -shared -Bsymbolic -Lgnu-efi/x86_64/gnuefi -Lgnu-efi/x86_64/lib -LCryptlib -LCryptlib/OpenSSL gnu-efi/x86_64/gnuefi/crt0-efi-x86_64.o --build-id=sha1  --no-undefined shim.o globals.o mok.o netboot.o cert.o replacements.o tpm.o version.o errlog.o sbat.o sbat_data.o pe.o httpboot.o csv.o load-options.o Cryptlib/libcryptlib.a Cryptlib/OpenSSL/libopenssl.a lib/lib.a gnu-efi/x86_64/lib/libefi.a gnu-efi/x86_64/gnuefi/libgnuefi.a -lefi -lgnuefi --start-group Cryptlib/libcryptlib.a Cryptlib/OpenSSL/libopenssl.a --end-group /usr/lib/gcc/x86_64-redhat-linux/8/libgcc.a lib/lib.a
@@ -618,7 +621,9 @@ objcopy -D -j .text -j .sdata -j .data -j .data.ident \
         -j .rela* -j .dyn -j .reloc -j .eh_frame \
         -j .vendor_cert -j .sbat \
         --target efi-app-x86_64 shimx64.so shimx64.efi
-./post-process-pe -vv shimx64.efi
+./post-process-pe -vv  shimx64.efi
+set_dll_characteristics():355: Updating DLL Characteristics from 0x0000 to 0x0100
+fix_checksum():413: Updating checksum from 0x000e623b to 0x000e633b
 objcopy -D -j .text -j .sdata -j .data \
         -j .dynamic -j .rodata -j .rel* \
         -j .rela* -j .dyn -j .reloc -j .eh_frame -j .sbat \
@@ -652,17 +657,21 @@ objcopy -D -j .text -j .sdata -j .data -j .data.ident \
         -j .rela* -j .dyn -j .reloc -j .eh_frame \
         -j .vendor_cert -j .sbat \
         --target efi-app-x86_64 mmx64.so mmx64.efi
-./post-process-pe -vv mmx64.efi
+./post-process-pe -vv  mmx64.efi
+set_dll_characteristics():355: Updating DLL Characteristics from 0x0000 to 0x0100
+fix_checksum():413: Updating checksum from 0x000dc59c to 0x000dc69c
 objcopy -D -j .text -j .sdata -j .data -j .data.ident \
         -j .dynamic -j .rodata -j .rel* \
         -j .rela* -j .dyn -j .reloc -j .eh_frame \
         -j .vendor_cert -j .sbat \
         --target efi-app-x86_64 fbx64.so fbx64.efi
-./post-process-pe -vv fbx64.efi
+./post-process-pe -vv  fbx64.efi
+set_dll_characteristics():355: Updating DLL Characteristics from 0x0000 to 0x0100
+fix_checksum():413: Updating checksum from 0x0001a386 to 0x0001a486
 + cd ..
-+ cd build-ia32                                                                                                                               
-+ setarch linux32 make TOPDIR=.. -f ../Makefile COMMITID=505cdb678b319fcf9a7fdee77c0f091b4147cbe5 EFIDIR=newstartos PKGNAME=shim RELEASE=1.el8 ENABLE_SHIM_HASH=true VENDOR_CERT_FILE=/builddir/build/SOURCES/NSDL_pub.cer ARCH=ia32 'DEFAULT_LOADER=\\\\grubia32.efi' all                  
-sed     -e "s,@@VERSION@@,15.6," \                                                                                                            
++ cd build-ia32                                                                                                                                      
++ setarch linux32 make TOPDIR=.. -f ../Makefile COMMITID=505cdb678b319fcf9a7fdee77c0f091b4147cbe5 EFIDIR=newstartos PKGNAME=shim RELEASE=1.el8 ENABLE_SHIM_HASH=true VENDOR_CERT_FILE=/builddir/build/SOURCES/NSDL_pub.cer ARCH=ia32 'DEFAULT_LOADER=\\\\grubia32.efi' all                                
+sed     -e "s,@@VERSION@@,15.6," \                                                                                                                   
         -e "s,@@UNAME@@,Linux i686 i686 i386 GNU/Linux," \
         -e "s,@@COMMIT@@,master," \
         < /builddir/build/BUILD/shim-15.6/version.c.in > version.c
@@ -1213,20 +1222,20 @@ a - runtime/rtdata.o
 a - ia32/initplat.o
 a - ia32/math.o
 a - ia32/setjmp.o
-make[2]: Leaving directory '/builddir/build/BUILD/shim-15.6/build-ia32/gnu-efi/ia32/lib'
+/usr/bin/ar: creating libefi.a
+make[2]: Leaving directory '/builddir/build/BUILD/shim-15.6/build-ia32/gnu-efi/ia32/lib'                                                             
 mkdir -p /builddir/build/BUILD/shim-15.6/build-ia32/gnu-efi/ia32/gnuefi
 make -C /builddir/build/BUILD/shim-15.6/build-ia32/gnu-efi/ia32/gnuefi -f /builddir/build/BUILD/shim-15.6/gnu-efi//gnuefi/Makefile SRCDIR=/builddir/build/BUILD/shim-15.6/gnu-efi//gnuefi ARCH=ia32
 make[2]: Entering directory '/builddir/build/BUILD/shim-15.6/build-ia32/gnu-efi/ia32/gnuefi'
-/usr/bin/ar: creating libefi.a
 gcc -I/builddir/build/BUILD/shim-15.6/gnu-efi//gnuefi -I/builddir/build/BUILD/shim-15.6/gnu-efi/inc -I/builddir/build/BUILD/shim-15.6/gnu-efi/inc/ia32 -I/builddir/build/BUILD/shim-15.6/gnu-efi/inc/protocol -Wno-error=pragmas -mno-mmx -mno-sse -mno-avx -fpic -m32 -Os -Wall -Wextra -Wno-missing-field-initializers -Werror -fshort-wchar -fno-strict-aliasing -ffreestanding -fno-stack-protector -fno-stack-check -nostdinc   -isystem /builddir/build/BUILD/shim-15.6/gnu-efi/../include/system -isystem /usr/lib/gcc/x86_64-redhat-linux/8/include -fno-merge-all-constants -DCONFIG_ia32 -c /builddir/build/BUILD/shim-15.6/gnu-efi//gnuefi/crt0-efi-ia32.S -o crt0-efi-ia32.o
 /builddir/build/BUILD/shim-15.6/gnu-efi//gnuefi/crt0-efi-ia32.S: Assembler messages:
-/builddir/build/BUILD/shim-15.6/gnu-efi//gnuefi/crt0-efi-ia32.S:74: Warning: setting incorrect section attributes for .reloc                  
+/builddir/build/BUILD/shim-15.6/gnu-efi//gnuefi/crt0-efi-ia32.S:74: Warning: setting incorrect section attributes for .reloc                         
 gcc -I/builddir/build/BUILD/shim-15.6/gnu-efi//gnuefi -I/builddir/build/BUILD/shim-15.6/gnu-efi/inc -I/builddir/build/BUILD/shim-15.6/gnu-efi/inc/ia32 -I/builddir/build/BUILD/shim-15.6/gnu-efi/inc/protocol -Wno-error=pragmas -mno-mmx -mno-sse -mno-avx -fpic -m32 -Os -Wall -Wextra -Wno-missing-field-initializers -Werror -fshort-wchar -fno-strict-aliasing -ffreestanding -fno-stack-protector -fno-stack-check -nostdinc   -isystem /builddir/build/BUILD/shim-15.6/gnu-efi/../include/system -isystem /usr/lib/gcc/x86_64-redhat-linux/8/include -fno-merge-all-constants -DCONFIG_ia32 -c /builddir/build/BUILD/shim-15.6/gnu-efi//gnuefi/reloc_ia32.c -o reloc_ia32.o
 gcc-ar rv -U libgnuefi.a reloc_ia32.o
-/usr/bin/ar: creating libgnuefi.a
-a - reloc_ia32.o                                                                                                                              
+a - reloc_ia32.o
 make[2]: Leaving directory '/builddir/build/BUILD/shim-15.6/build-ia32/gnu-efi/ia32/gnuefi'
-mkdir -p /builddir/build/BUILD/shim-15.6/build-ia32/gnu-efi/ia32/inc
+/usr/bin/ar: creating libgnuefi.a
+mkdir -p /builddir/build/BUILD/shim-15.6/build-ia32/gnu-efi/ia32/inc                                                                                 
 make -C /builddir/build/BUILD/shim-15.6/build-ia32/gnu-efi/ia32/inc -f /builddir/build/BUILD/shim-15.6/gnu-efi//inc/Makefile SRCDIR=/builddir/build/BUILD/shim-15.6/gnu-efi//inc ARCH=ia32
 make[2]: Entering directory '/builddir/build/BUILD/shim-15.6/build-ia32/gnu-efi/ia32/inc'
 make[2]: Nothing to be done for 'all'.
@@ -1239,7 +1248,9 @@ objcopy -D -j .text -j .sdata -j .data -j .data.ident \
         -j .rela* -j .dyn -j .reloc -j .eh_frame \
         -j .vendor_cert -j .sbat \
         --target efi-app-ia32 shimia32.so shimia32.efi
-./post-process-pe -vv shimia32.efi
+./post-process-pe -vv  shimia32.efi
+set_dll_characteristics():355: Updating DLL Characteristics from 0x0000 to 0x0100
+fix_checksum():413: Updating checksum from 0x000bd9ec to 0x000bdaec
 objcopy -D -j .text -j .sdata -j .data \
         -j .dynamic -j .rodata -j .rel* \
         -j .rela* -j .dyn -j .reloc -j .eh_frame -j .sbat \
@@ -1273,34 +1284,38 @@ objcopy -D -j .text -j .sdata -j .data -j .data.ident \
         -j .rela* -j .dyn -j .reloc -j .eh_frame \
         -j .vendor_cert -j .sbat \
         --target efi-app-ia32 mmia32.so mmia32.efi
-./post-process-pe -vv mmia32.efi
+./post-process-pe -vv  mmia32.efi
+set_dll_characteristics():355: Updating DLL Characteristics from 0x0000 to 0x0100
+fix_checksum():413: Updating checksum from 0x000ad5ca to 0x000ad6ca
 objcopy -D -j .text -j .sdata -j .data -j .data.ident \
         -j .dynamic -j .rodata -j .rel* \
         -j .rela* -j .dyn -j .reloc -j .eh_frame \
         -j .vendor_cert -j .sbat \
         --target efi-app-ia32 fbia32.so fbia32.efi
-./post-process-pe -vv fbia32.efi
+./post-process-pe -vv  fbia32.efi
+set_dll_characteristics():355: Updating DLL Characteristics from 0x0000 to 0x0100
+fix_checksum():413: Updating checksum from 0x000178ae to 0x000179ae
 + cd ..
-+ exit 0                                                                                                                                      
-+ umask 022                                                                                                                                   
-+ cd /builddir/build//BUILD                                                                                                                   
-+ '[' /builddir/build/BUILDROOT/shim-unsigned-x64-15.6-1.el8.x86_64 '!=' / ']'                                                                
-+ rm -rf /builddir/build/BUILDROOT/shim-unsigned-x64-15.6-1.el8.x86_64                                                                        
-++ dirname /builddir/build/BUILDROOT/shim-unsigned-x64-15.6-1.el8.x86_64                                                                      
-+ mkdir -p /builddir/build/BUILDROOT                                                                                                          
-+ mkdir /builddir/build/BUILDROOT/shim-unsigned-x64-15.6-1.el8.x86_64                                                                         
-+ cd shim-15.6                                                                                                                                
-++ cat commit                                                                                                                                 
-+ COMMITID=505cdb678b319fcf9a7fdee77c0f091b4147cbe5                                                                                           
-+ MAKEFLAGS='TOPDIR=.. -f ../Makefile COMMITID=505cdb678b319fcf9a7fdee77c0f091b4147cbe5 '                                                     
-+ MAKEFLAGS+='EFIDIR=newstartos PKGNAME=shim RELEASE=1.el8 '                                                                                  
-+ MAKEFLAGS+='ENABLE_SHIM_HASH=true '                                                                                                         
-+ '[' -f /builddir/build/SOURCES/NSDL_pub.cer ']'                                                                                             
-+ MAKEFLAGS='TOPDIR=.. -f ../Makefile COMMITID=505cdb678b319fcf9a7fdee77c0f091b4147cbe5 EFIDIR=newstartos PKGNAME=shim RELEASE=1.el8 ENABLE_SHIM_HASH=true  VENDOR_CERT_FILE=/builddir/build/SOURCES/NSDL_pub.cer'                                                                          
-+ cd build-x64                                                                                                                                
-+ make TOPDIR=.. -f ../Makefile COMMITID=505cdb678b319fcf9a7fdee77c0f091b4147cbe5 EFIDIR=newstartos PKGNAME=shim RELEASE=1.el8 ENABLE_SHIM_HASH=true VENDOR_CERT_FILE=/builddir/build/SOURCES/NSDL_pub.cer 'DEFAULT_LOADER=\\\\grubx64.efi' DESTDIR=/builddir/build/BUILDROOT/shim-unsigned-x64-15.6-1.el8.x86_64 install-as-data install-debuginfo install-debugsource                                                                   
-Executing(%install): /bin/sh -e /var/tmp/rpm-tmp.3Zkbat                                                                                       
-gcc -I/usr/include -Og -g3 -Wall -Werror -Wextra -o buildid /builddir/build/BUILD/shim-15.6/buildid.c -lelf
++ exit 0                                                                                                                                             
+Executing(%install): /bin/sh -e /var/tmp/rpm-tmp.lYXuA1                                                                                              
++ umask 022
++ cd /builddir/build//BUILD                                                                                                                          
++ '[' /builddir/build/BUILDROOT/shim-unsigned-x64-15.6-1.el8.x86_64 '!=' / ']'                                                                       
++ rm -rf /builddir/build/BUILDROOT/shim-unsigned-x64-15.6-1.el8.x86_64                                                                               
+++ dirname /builddir/build/BUILDROOT/shim-unsigned-x64-15.6-1.el8.x86_64                                                                             
++ mkdir -p /builddir/build/BUILDROOT                                                                                                                 
++ mkdir /builddir/build/BUILDROOT/shim-unsigned-x64-15.6-1.el8.x86_64                                                                                
++ cd shim-15.6                                                                                                                                       
+++ cat commit                                                                                                                                        
++ COMMITID=505cdb678b319fcf9a7fdee77c0f091b4147cbe5                                                                                                  
++ MAKEFLAGS='TOPDIR=.. -f ../Makefile COMMITID=505cdb678b319fcf9a7fdee77c0f091b4147cbe5 '                                                            
++ MAKEFLAGS+='EFIDIR=newstartos PKGNAME=shim RELEASE=1.el8 '                                                                                         
++ MAKEFLAGS+='ENABLE_SHIM_HASH=true '                                                                                                                
++ '[' -f /builddir/build/SOURCES/NSDL_pub.cer ']'                                                                                                    
++ MAKEFLAGS='TOPDIR=.. -f ../Makefile COMMITID=505cdb678b319fcf9a7fdee77c0f091b4147cbe5 EFIDIR=newstartos PKGNAME=shim RELEASE=1.el8 ENABLE_SHIM_HASH=true  VENDOR_CERT_FILE=/builddir/build/SOURCES/NSDL_pub.cer'                                                                                        
++ cd build-x64                                                                                                                                       
++ make TOPDIR=.. -f ../Makefile COMMITID=505cdb678b319fcf9a7fdee77c0f091b4147cbe5 EFIDIR=newstartos PKGNAME=shim RELEASE=1.el8 ENABLE_SHIM_HASH=true VENDOR_CERT_FILE=/builddir/build/SOURCES/NSDL_pub.cer 'DEFAULT_LOADER=\\\\grubx64.efi' DESTDIR=/builddir/build/BUILDROOT/shim-unsigned-x64-15.6-1.el8.x86_64 install-as-data install-debuginfo install-debugsource                                                                                        
+gcc -I/usr/include -Og -g3 -Wall -Werror -Wextra -o buildid /builddir/build/BUILD/shim-15.6/buildid.c -lelf                                          
 Making BOOTX64.CSV
 install -d -m 0755 /builddir/build/BUILDROOT/shim-unsigned-x64-15.6-1.el8.x86_64//usr/share//shim/15.6-1.el8/x64/
 install -m 0644 shimx64.efi /builddir/build/BUILDROOT/shim-unsigned-x64-15.6-1.el8.x86_64//usr/share//shim/15.6-1.el8/x64//
@@ -1317,9 +1332,9 @@ find /builddir/build/BUILD/shim-15.6 -type f -a '(' -iname '*.c' -o -iname '*.h'
         install -m 0644 ${file} /builddir/build/BUILDROOT/shim-unsigned-x64-15.6-1.el8.x86_64//usr/src/debug//shim-15.6-1.el8/${outfile} ; \
 done
 + cd ..
-+ cd build-ia32                                                                                                                               
-+ setarch linux32 make TOPDIR=.. -f ../Makefile COMMITID=505cdb678b319fcf9a7fdee77c0f091b4147cbe5 EFIDIR=newstartos PKGNAME=shim RELEASE=1.el8 ENABLE_SHIM_HASH=true VENDOR_CERT_FILE=/builddir/build/SOURCES/NSDL_pub.cer ARCH=ia32 'DEFAULT_LOADER=\\\\grubia32.efi' DESTDIR=/builddir/build/BUILDROOT/shim-unsigned-x64-15.6-1.el8.x86_64 install-as-data install-debuginfo install-debugsource                                        
-gcc -I/usr/include -Og -g3 -Wall -Werror -Wextra -o buildid /builddir/build/BUILD/shim-15.6/buildid.c -lelf                                   
++ cd build-ia32                                                                                                                                      
++ setarch linux32 make TOPDIR=.. -f ../Makefile COMMITID=505cdb678b319fcf9a7fdee77c0f091b4147cbe5 EFIDIR=newstartos PKGNAME=shim RELEASE=1.el8 ENABLE_SHIM_HASH=true VENDOR_CERT_FILE=/builddir/build/SOURCES/NSDL_pub.cer ARCH=ia32 'DEFAULT_LOADER=\\\\grubia32.efi' DESTDIR=/builddir/build/BUILDROOT/shim-unsigned-x64-15.6-1.el8.x86_64 install-as-data install-debuginfo install-debugsource                                                             
+gcc -I/usr/include -Og -g3 -Wall -Werror -Wextra -o buildid /builddir/build/BUILD/shim-15.6/buildid.c -lelf                                          
 Making BOOTIA32.CSV
 install -d -m 0755 /builddir/build/BUILDROOT/shim-unsigned-x64-15.6-1.el8.x86_64//usr/share//shim/15.6-1.el8/ia32/
 install -m 0644 shimia32.efi /builddir/build/BUILDROOT/shim-unsigned-x64-15.6-1.el8.x86_64//usr/share//shim/15.6-1.el8/ia32//
@@ -1336,43 +1351,43 @@ find /builddir/build/BUILD/shim-15.6 -type f -a '(' -iname '*.c' -o -iname '*.h'
         install -m 0644 ${file} /builddir/build/BUILDROOT/shim-unsigned-x64-15.6-1.el8.x86_64//usr/src/debug//shim-15.6-1.el8/${outfile} ; \
 done
 + cd ..
-+ /builddir/build/SOURCES/shim-find-debuginfo.sh x64 ia32                                                                                     
-+ /usr/lib/rpm/check-buildroot                                                                                                                
-+ /usr/lib/rpm/redhat/brp-ldconfig                                                                                                            
-/sbin/ldconfig: Warning: ignoring configuration file that cannot be opened: /etc/ld.so.conf: No such file or directory                        
-+ /usr/lib/rpm/brp-compress                                                                                                                   
-+ /usr/lib/rpm/brp-strip-static-archive /usr/bin/strip                                                                                        
-+ /usr/lib/rpm/brp-python-bytecompile 1                                                                                                       
-+ /usr/lib/rpm/brp-python-hardlink                                                                                                            
-+ PYTHON3=/usr/libexec/platform-python                                                                                                        
-+ /usr/lib/rpm/redhat/brp-mangle-shebangs                                                                                                     
-+ umask 022                                                                                                                                   
-+ cd /builddir/build//BUILD                                                                                                                   
-+ cd shim-15.6                                                                                                                                
-+ LICENSEDIR=/builddir/build/BUILDROOT/shim-unsigned-x64-15.6-1.el8.x86_64/usr/share/licenses/shim-unsigned-x64                               
-+ export LC_ALL=C                                                                                                                             
-+ LC_ALL=C                                                                                                                                    
-+ export LICENSEDIR                                                                                                                           
-+ /usr/bin/mkdir -p /builddir/build/BUILDROOT/shim-unsigned-x64-15.6-1.el8.x86_64/usr/share/licenses/shim-unsigned-x64                        
-+ cp -pr COPYRIGHT /builddir/build/BUILDROOT/shim-unsigned-x64-15.6-1.el8.x86_64/usr/share/licenses/shim-unsigned-x64                         
-Processing files: shim-unsigned-x64-15.6-1.el8.x86_64                                                                                         
-Executing(%license): /bin/sh -e /var/tmp/rpm-tmp.epreIS
-+ exit 0
-Provides: bundled(openssl) = 1.0.2j shim-unsigned-x64 = 15.6-1.el8 shim-unsigned-x64(x86-64) = 15.6-1.el8                                     
++ /builddir/build/SOURCES/shim-find-debuginfo.sh x64 ia32                                                                                            
++ /usr/lib/rpm/check-buildroot                                                                                                                       
++ /usr/lib/rpm/redhat/brp-ldconfig                                                                                                                   
+/sbin/ldconfig: Warning: ignoring configuration file that cannot be opened: /etc/ld.so.conf: No such file or directory                               
++ /usr/lib/rpm/brp-compress                                                                                                                          
++ /usr/lib/rpm/brp-strip-static-archive /usr/bin/strip                                                                                               
++ /usr/lib/rpm/brp-python-bytecompile 1                                                                                                              
++ /usr/lib/rpm/brp-python-hardlink                                                                                                                   
++ PYTHON3=/usr/libexec/platform-python                                                                                                               
++ /usr/lib/rpm/redhat/brp-mangle-shebangs                                                                                                            
+Processing files: shim-unsigned-x64-15.6-1.el8.x86_64                                                                                                
+Executing(%license): /bin/sh -e /var/tmp/rpm-tmp.3v47HG
++ umask 022
++ cd /builddir/build//BUILD                                                                                                                          
++ cd shim-15.6                                                                                                                                       
++ LICENSEDIR=/builddir/build/BUILDROOT/shim-unsigned-x64-15.6-1.el8.x86_64/usr/share/licenses/shim-unsigned-x64                                      
++ export LC_ALL=C                                                                                                                                    
++ LC_ALL=C                                                                                                                                           
++ export LICENSEDIR                                                                                                                                  
++ /usr/bin/mkdir -p /builddir/build/BUILDROOT/shim-unsigned-x64-15.6-1.el8.x86_64/usr/share/licenses/shim-unsigned-x64                               
++ cp -pr COPYRIGHT /builddir/build/BUILDROOT/shim-unsigned-x64-15.6-1.el8.x86_64/usr/share/licenses/shim-unsigned-x64                                
++ exit 0                                                                                                                                             
+Provides: bundled(openssl) = 1.0.2j shim-unsigned-x64 = 15.6-1.el8 shim-unsigned-x64(x86-64) = 15.6-1.el8                                            
 Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
 Processing files: shim-unsigned-ia32-15.6-1.el8.x86_64
-Executing(%license): /bin/sh -e /var/tmp/rpm-tmp.1zJ7pi
+Executing(%license): /bin/sh -e /var/tmp/rpm-tmp.RbTlYl
 + umask 022
-+ cd /builddir/build//BUILD                                                                                                                   
-+ cd shim-15.6                                                                                                                                
-+ LICENSEDIR=/builddir/build/BUILDROOT/shim-unsigned-x64-15.6-1.el8.x86_64/usr/share/licenses/shim-unsigned-ia32                              
-+ export LC_ALL=C                                                                                                                             
-+ LC_ALL=C                                                                                                                                    
-+ export LICENSEDIR                                                                                                                           
-+ /usr/bin/mkdir -p /builddir/build/BUILDROOT/shim-unsigned-x64-15.6-1.el8.x86_64/usr/share/licenses/shim-unsigned-ia32                       
-+ cp -pr COPYRIGHT /builddir/build/BUILDROOT/shim-unsigned-x64-15.6-1.el8.x86_64/usr/share/licenses/shim-unsigned-ia32                        
-+ exit 0                                                                                                                                      
-Provides: bundled(openssl) = 1.0.2j shim-unsigned-ia32 = 15.6-1.el8 shim-unsigned-ia32(x86-64) = 15.6-1.el8                                   
++ cd /builddir/build//BUILD                                                                                                                          
++ cd shim-15.6                                                                                                                                       
++ LICENSEDIR=/builddir/build/BUILDROOT/shim-unsigned-x64-15.6-1.el8.x86_64/usr/share/licenses/shim-unsigned-ia32                                     
++ export LC_ALL=C                                                                                                                                    
++ LC_ALL=C                                                                                                                                           
++ export LICENSEDIR                                                                                                                                  
++ /usr/bin/mkdir -p /builddir/build/BUILDROOT/shim-unsigned-x64-15.6-1.el8.x86_64/usr/share/licenses/shim-unsigned-ia32                              
++ cp -pr COPYRIGHT /builddir/build/BUILDROOT/shim-unsigned-x64-15.6-1.el8.x86_64/usr/share/licenses/shim-unsigned-ia32                               
++ exit 0                                                                                                                                             
+Provides: bundled(openssl) = 1.0.2j shim-unsigned-ia32 = 15.6-1.el8 shim-unsigned-ia32(x86-64) = 15.6-1.el8                                          
 Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
 Processing files: shim-unsigned-x64-debuginfo-15.6-1.el8.noarch
 Provides: shim-unsigned-x64-debuginfo = 15.6-1.el8
@@ -1380,11 +1395,11 @@ Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 
 Recommends: shim-unsigned-x64-debugsource(x86-64) = 15.6-1.el8
 Processing files: shim-unsigned-ia32-debuginfo-15.6-1.el8.noarch
 warning: Arch dependent binaries in noarch package
-Provides: shim-unsigned-ia32-debuginfo = 15.6-1.el8                                                                                           
+Provides: shim-unsigned-ia32-debuginfo = 15.6-1.el8                                                                                                  
 Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
 Processing files: shim-unsigned-x64-debugsource-15.6-1.el8.noarch
 warning: Arch dependent binaries in noarch package
-Provides: shim-unsigned-x64-debugsource = 15.6-1.el8                                                                                          
+Provides: shim-unsigned-x64-debugsource = 15.6-1.el8                                                                                                 
 Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
 Checking for unpackaged file(s): /usr/lib/rpm/check-files /builddir/build/BUILDROOT/shim-unsigned-x64-15.6-1.el8.x86_64
 Wrote: /builddir/build/RPMS/x86_64/shim-unsigned-x64-15.6-1.el8.x86_64.rpm
@@ -1392,9 +1407,9 @@ Wrote: /builddir/build/RPMS/x86_64/shim-unsigned-ia32-15.6-1.el8.x86_64.rpm
 Wrote: /builddir/build/RPMS/noarch/shim-unsigned-x64-debuginfo-15.6-1.el8.noarch.rpm
 Wrote: /builddir/build/RPMS/noarch/shim-unsigned-ia32-debuginfo-15.6-1.el8.noarch.rpm
 Wrote: /builddir/build/RPMS/noarch/shim-unsigned-x64-debugsource-15.6-1.el8.noarch.rpm
-Executing(%clean): /bin/sh -e /var/tmp/rpm-tmp.So5Je1
+Executing(%clean): /bin/sh -e /var/tmp/rpm-tmp.x9cuni
 + umask 022
-+ cd /builddir/build//BUILD                                                                                                                   
-+ cd shim-15.6                                                                                                                                
-+ /usr/bin/rm -rf /builddir/build/BUILDROOT/shim-unsigned-x64-15.6-1.el8.x86_64                                                               
-+ exit 0                                                                                                                                      
++ cd /builddir/build//BUILD                                                                                                                          
++ cd shim-15.6                                                                                                                                       
++ /usr/bin/rm -rf /builddir/build/BUILDROOT/shim-unsigned-x64-15.6-1.el8.x86_64                                                                      
++ exit 0                                                                                                                                             

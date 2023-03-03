@@ -209,9 +209,9 @@ New vendor - First submission.
 ### What is the SHA256 hash of your final SHIM binary?
 -------------------------------------------------------------------------------
 sha256sum shimia32.efi
-89ea4fe5c9bd0ad07bdec54c355290b28b2fcb69745d8d10dc0b39e8aaf72dc3  shimia32.efi
+a3ff0cc4313616cb3dfb0784b75c66481ec1625735ea912215f9f403c0d6cedf  shimia32.efi
 sha256sum shimx64.efi
-1e578f73ab4b253e030d66e9545b7faceb7b3f76319803f7e1330bebb1e6f08a  shimx64.efi
+a9ee49df074e4edce671c60090c8223c7aa0be872c32565ce4d497136629db28  shimx64.efi
 
 -------------------------------------------------------------------------------
 ### How do you manage and protect the keys used in your SHIM?
