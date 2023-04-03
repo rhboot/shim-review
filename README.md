@@ -49,7 +49,7 @@ If we get a shim signed by Microsoft, users around the world will be able to use
 *******************************************************************************
 ### Why are you unable to reuse shim from another distro that is already signed?
 *******************************************************************************
-[your text here]
+This is our first submission. and our OS is custom build for secure reason.
 
 *******************************************************************************
 ### Who is the primary contact for security updates, etc.?
