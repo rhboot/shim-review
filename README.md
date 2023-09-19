@@ -15,6 +15,9 @@ Note that we really only have experience with using GRUB2 on Linux, so asking
 us to endorse anything else for signing is going to require some convincing on
 your part.
 
+Check the docs directory in this repo for guidance on submission and
+getting your shim signed.
+
 Here's the template:
 
 *******************************************************************************
