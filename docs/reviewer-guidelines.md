@@ -44,7 +44,7 @@ First of all, there are some higher-level things to consider:
    1. Not providing a Dockerfile that works, or one that makes it hard
       for you to see what's going on.
 
-   1. Mot providing all the details of their other binaries, or maybe
+   1. Not providing all the details of their other binaries, or maybe
       being vague about them. It's easy to miss this kind of thing
       when submitting, and we should be looking for these. It's most
       likely just something's that been missed, but we should be
@@ -107,7 +107,7 @@ help** if you're not sure.
 
 Ideally, the build should be made using the exact source tarball
 referenced in the submission guidelines, but so long as the source is
-**clearly** the same then it's acceptable to use a git repo instead.
+**clearly** the same, then it's acceptable to use a git repo instead.
 
 We can no longer accept shim signing submissions for versions before
 **15.7**.
@@ -142,7 +142,7 @@ data:
 Is SBAT data present in the provided binaries, and does it match what
 was provided in the answers to issue template questions?
 
-Is the vendor extension sensible? A clear unique name is good,
+Is the vendor extension sensible? A clear, unique name is good,
 something that's too likely to clash with another vendor is bad. Too
 long or too short an extension is not wanted, etc.
 
@@ -164,7 +164,7 @@ If grub is used:
    the submitter and well understood? This can be **very**
    time-consuming to do right - if a vendor is doing their own novel
    patches we may need to get more reviews.
-1. Which grub modules are built in? The smaller the better here, for
+1. Which grub modules are built in? The smaller, the better here, for
    the sake of reduced attack surface. Some of the more obscure grub
    filesystem modules have patchy security history and are best left
    disabled.
@@ -192,7 +192,7 @@ Does the submitter adequately address how secure boot is enforced in
 their boot stack and how their boot stack prevents execution of
 unauthenticated code?
 
-## Working with shim-review github issues
+## Working with shim-review GitHub issues
 
 Except for sending the contact verification mails (see above), please
 keep all communications in the issues.
@@ -200,7 +200,7 @@ keep all communications in the issues.
 We have a small set of labels that can be attached to review
 submissions to help us track things. These should be
 self-explanatory. The correct labels should also act to give clear
-information to submitters. **Iff** you're a known reviewer you can
+information to submitters. **If** you're a known reviewer you can
 add/remove/modify labels as you see fit.
 
 We should never add the ``accepted`` label until a submission is
