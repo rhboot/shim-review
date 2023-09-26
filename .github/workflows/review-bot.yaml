@@ -1,0 +1,44 @@
+name: review bot
+on:
+  issue_comment:
+    types: [created, edited]
+jobs:
+  review_comment:
+    if: contains(github.event.comment.body, '/review-bot ')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: "DamianReeves/write-file-action@master"
+        with:
+          path: /tmp/comment.txt
+          write-mode: overwrite
+          contents: ${{ github.event.comment.body }}
+      - uses: jc-lab/shim-review-bot@v0.0.8
+        with:
+          comment-file: /tmp/comment.txt
+          issue-repository: ${{ github.repository }}
+          issue-number: ${{ github.event.issue.number }}
+          source: ${{ inputs.source }}
+          build-script: ${{ inputs.build-script }}
+          output-file: ${{ inputs.output-file }}
+          vendor-cert: ${{ inputs.vendor-cert }}
+          report-output: ${{ inputs.report-output }}
+
+
+# ISSUE MESSAGE FORMAT
+# ==================================================
+# /review-bot SOURCE
+# ``` (it is optional. yaml-format)
+# parameters
+# ```
+# ==================================================
+
+# ISSUE MESSAGE SAMPLE
+# ==================================================
+# /review-bot https://github.com/jc-lab/shim-review-bot/tree/master/sample-repo
+# ```
+# build-script: build.sh
+# output-file: output.tar
+# vendor-cert: vendor_cert.der
+# sbat: sbat.csv
+# ```
+# ==================================================
