@@ -11,8 +11,8 @@ This repo is for review of requests for signing shim.  To create a request for r
 - file an issue at https://github.com/rhboot/shim-review/issues with a link to your tag
 - approval is ready when the "accepted" label is added to your issue
 
-Note that we really only have experience with using GRUB2 on Linux, so asking
-us to endorse anything else for signing is going to require some convincing on
+Note that we really only have experience with using GRUB2 or systemd-boot on Linux, so
+asking us to endorse anything else for signing is going to require some convincing on
 your part.
 
 Check the docs directory in this repo for guidance on submission and
@@ -137,7 +137,7 @@ This matches https://github.com/rhboot/shim/releases/tag/15.7 and contains the a
 [your text here]
 
 *******************************************************************************
-### If these fixes have been applied, is the upstream global SBAT generation in your GRUB2 binary set to 4?
+### If shim is loading GRUB2 bootloader, and if these fixes have been applied, is the upstream global SBAT generation in your GRUB2 binary set to 4?
 The entry should look similar to: `grub,4,Free Software Foundation,grub,GRUB_UPSTREAM_VERSION,https://www.gnu.org/software/grub/`
 *******************************************************************************
 [your text here]
@@ -212,22 +212,28 @@ This should include logs for creating the buildroots, applying patches, doing th
 [your text here]
 
 *******************************************************************************
-### Do you add a vendor-specific SBAT entry to the SBAT section in each binary that supports SBAT metadata ( GRUB2, fwupd, fwupdate, shim + all child shim binaries )?
+### Do you add a vendor-specific SBAT entry to the SBAT section in each binary that supports SBAT metadata ( GRUB2, fwupd, fwupdate, systemd-boot, systemd-stub, shim + all child shim binaries )?
 ### Please provide exact SBAT entries for all SBAT binaries you are booting or planning to boot directly through shim.
 ### Where your code is only slightly modified from an upstream vendor's, please also preserve their SBAT entries to simplify revocation.
-If you are using a downstream implementation of GRUB2 (e.g. from Fedora or Debian), please
-preserve the SBAT entry from those distributions and only append your own.
-More information on how SBAT works can be found [here](https://github.com/rhboot/shim/blob/main/SBAT.md).
+If you are using a downstream implementation of GRUB2 or systemd-boot (e.g.
+from Fedora or Debian), please preserve the SBAT entry from those distributions
+and only append your own. More information on how SBAT works can be found
+[here](https://github.com/rhboot/shim/blob/main/SBAT.md).
 *******************************************************************************
 [your text here]
 
 *******************************************************************************
-### Which modules are built into your signed GRUB2 image?
+### If shim is loading GRUB2 bootloader, which modules are built into your signed GRUB2 image?
 *******************************************************************************
 [your text here]
 
 *******************************************************************************
-### What is the origin and full version number of your bootloader (GRUB2 or other)?
+### If you are using systemd-boot on arm64 or riscv, is the fix for [unverified Devicetree Blob loading](https://github.com/systemd/systemd/security/advisories/GHSA-6m6p-rjcq-334c) included?
+*******************************************************************************
+[your text here]
+
+*******************************************************************************
+### What is the origin and full version number of your bootloader (GRUB2 or systemd-boot or other)?
 *******************************************************************************
 [your text here]
 
@@ -237,7 +243,7 @@ More information on how SBAT works can be found [here](https://github.com/rhboot
 [your text here]
 
 *******************************************************************************
-### If your GRUB2 launches any other binaries that are not the Linux kernel in SecureBoot mode, please provide further details on what is launched and how it enforces Secureboot lockdown.
+### If your GRUB2 or systemd-boot launches any other binaries that are not the Linux kernel in SecureBoot mode, please provide further details on what is launched and how it enforces Secureboot lockdown.
 *******************************************************************************
 [your text here]
 
