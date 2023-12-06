@@ -172,16 +172,16 @@ exactly what your changes are and why you need them. Shim is
 security-critical and reviewers will need to understand your changes
 and verify that they do not cause security regressions.
 
-Similarly, shim is normally used to load GRUB as the system
-bootloader. if you're doing something different, this will need deeper
-review. Please make it as easy as possible for reviewers to understand
-what you're doing (and why!) if you want them to accept your shim for
-signing.
+Similarly, shim is normally used to load GRUB or systemd-boot as the
+system bootloader. if you're doing something different, this will need
+deeper review. Please make it as easy as possible for reviewers to
+understand what you're doing (and why!) if you want them to accept your
+shim for signing.
 
 ### 3.5 Sources and patches for other components
 
-Reviewers will expect to be able to inspect your GRUB sources to
-validate the state of Secure Boot patches in particular, and will
-normally also ask about patches to other system components like Linux
-and fwupd. We need to consider the security of the entire boot chain
-here - shim is just the first step.
+Reviewers will expect to be able to inspect your GRUB or systemd-boot
+sources to validate the state of Secure Boot patches in particular, and
+will normally also ask about patches to other system components like
+Linux and fwupd. We need to consider the security of the entire boot
+chain here - shim is just the first step.
