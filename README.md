@@ -88,6 +88,13 @@ This matches https://github.com/rhboot/shim/releases/tag/15.8 and contains the a
 [your text here]
 
 *******************************************************************************
+### Do you have the NX bit set in your shim? If so, is your entire boot stack NX-compatible and what testing have you done to ensure such compatibility?
+
+See https://techcommunity.microsoft.com/t5/hardware-dev-center/nx-exception-for-shim-community/ba-p/3976522 for more details on the signing of shim without NX bit.
+*******************************************************************************
+[your text here]
+
+*******************************************************************************
 ### If shim is loading GRUB2 bootloader what exact implementation of Secureboot in GRUB2 do you have? (Either Upstream GRUB2 shim_lock verifier or Downstream RHEL/Fedora/Debian/Canonical-like implementation)
 *******************************************************************************
 [your text here]
