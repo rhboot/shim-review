@@ -1,10 +1,9 @@
 # Submitting a shim build
 
-Here's a quick guide to the process for getting a shim build reviewed
-and signed. Other docs here:
+Here's a quick guide to the process for getting a shim build reviewed and
+signed. The other, more detailed docs are listed here: (one as of today)
 
-* [[Recommendations for vendors|vendor-recommendations]]
-* [[Guidelines for reviewers|reviewer-guidelines]]
+- [Guidelines for reviewers](./reviewer-guidelines)
 
 If anything here or in the submission templates is not clear, please
 ask for help before you spend a lot of time on an incorrect path.
@@ -36,7 +35,7 @@ you.
 
 If you're sure you need your own shim binary signed by Microsoft,
 first go and create an account etc. with them. Check
-[[Microsoft's signing policies|https://techcommunity.microsoft.com/t5/hardware-dev-center/updated-uefi-signing-requirements/ba-p/1062916]]
+[Microsoft's signing policies](https://techcommunity.microsoft.com/t5/hardware-dev-center/updated-uefi-signing-requirements/ba-p/1062916)
 for all their specific requirements.
 
 ## 2. Build and test shim
@@ -66,8 +65,8 @@ accepted.
 **SBAT** is ``Secure Boot Advanced Targeting``. It's a method to
 efficiently handle revocation of old insecure Secure Boot binaries,
 introduced in shim for the 15.3 release. The
-[[SBAT spec|https://github.com/rhboot/shim/blob/main/SBAT.md]] and
-[[SBAT examples|https://github.com/rhboot/shim/blob/main/SBAT.example.md]]
+[SBAT spec](https://github.com/rhboot/shim/blob/main/SBAT.md) and
+[SBAT examples](https://github.com/rhboot/shim/blob/main/SBAT.example.md)
 documents have a lot more information about how it works, and what's
 needed.
 
@@ -105,9 +104,9 @@ loading individual binaries by checksum.
 
 There are strong recommendations on the types of certificates that
 should be used in shim, and also on how keys should be managed for
-security. See the appropriate section in
-[[Recommendations for vendors|vendor-recommendations]] for tips on
-this, and also some sugested schems for key and certificate
+security. See the 12th bullet in [Microsoft UEFI Signing
+Requirements](https://techcommunity.microsoft.com/t5/hardware-dev-center/updated-uefi-signing-requirements/ba-p/1062916)
+for tips on this, and also some sugested schems for key and certificate
 management.
 
 ### 3.3 Reproducible build
@@ -154,14 +153,14 @@ shim. If you're not, reviewers will simply reject your submission and
 ask you to start again.
 
 Check that you have picked up any upstream patches recommended for
-your use cases. To help with this, there is a tracking issue pinned in
-the [[shim-review|https://github.com/rhboot/shim-review/issues]]
+your use cases. To help with this, there should be tracking issues pinned in
+the [shim-review](https://github.com/rhboot/shim-review/issues)
 issues list which includes details of current patches recommended for
 inclusion.
 
 If you add any patches from upstream like this, again
 **please** make it easy for reviewers to verify what the patches
-are. ```git format-patch`` is your friend here - patch file names,
+are. ``git format-patch`` is your friend here - patch file names,
 commit hashes and commit messages will all help the reviewer here.
 
 If you have your **own** patches to shim, these will of course take
