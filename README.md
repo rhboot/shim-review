@@ -221,7 +221,7 @@ For example, signing new kernel's variants, UKI, systemd-boot, new certs, new CA
 
 *******************************************************************************
 ### Do you add a vendor-specific SBAT entry to the SBAT section in each binary that supports SBAT metadata ( GRUB2, fwupd, fwupdate, systemd-boot, systemd-stub, shim + all child shim binaries )?
-### Please provide exact SBAT entries for all SBAT binaries you are booting or planning to boot directly through shim.
+### Please provide exact SBAT entries for all shim binaries as well as all SBAT binaries that shim will directly boot.
 ### Where your code is only slightly modified from an upstream vendor's, please also preserve their SBAT entries to simplify revocation.
 If you are using a downstream implementation of GRUB2 or systemd-boot (e.g.
 from Fedora or Debian), please preserve the SBAT entry from those distributions
