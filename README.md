@@ -199,7 +199,7 @@ This should include logs for creating the buildroots, applying patches, doing th
 [your text here]
 
 *******************************************************************************
-### What changes were made in the distor's secure boot chain since your SHIM was last signed?
+### What changes were made in the distro's secure boot chain since your SHIM was last signed?
 For example, signing new kernel's variants, UKI, systemd-boot, new certs, new CA, etc..
 *******************************************************************************
 [your text here]
