@@ -186,7 +186,8 @@ If systemd-boot is used:
 1. Does it include the appropriate SBAT metadata, and if Type #2 BLS
    (i.e.: UKIs) are used, are the identifiers of systemd-boot and
    systemd-stub (UKI/kernel.efi) separate and distinct (examples after
-   the list)?
+   the list)? For UKIs, is there also a line that identifies the binary
+   as a UKI tagged with vendor-specific metadata?
 1. Are there any custom patches applied?  If so, are they explained by
    the submitter and well understood? This can be **very**
    time-consuming to do right - if a vendor is doing their own novel
@@ -206,6 +207,7 @@ Example of the .sbat entry of a UKI:
 sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
 systemd-stub,1,The systemd Developers,systemd,255,https://systemd.io/
 systemd-stub.debian,1,Debian GNU/Linux,systemd,255-1,https://bugs.debian.org/
+uki.debian,1,UKI for Debian GNU/Linux,debian,12,https://uapi-group.org/specifications/specs/unified_kernel_image/
 ```
 
 ## Alternative second-stage bootloaders
