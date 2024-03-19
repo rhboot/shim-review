@@ -96,6 +96,9 @@ You'll need to embed certificate data into your shim build, of
 course - this is the purpose of shim! You can include multiple
 certificates if desired.
 
+**NOTE:** The certificate(s) must be encoded using **DER** format,
+**not** PEM.
+
 You may also need to include lists of revocations. For example, you
 may need to revoke old binaries or signatures after a security hole
 has been discovered. It's possible to revoke a certificate (and
