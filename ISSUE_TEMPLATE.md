@@ -23,3 +23,8 @@ Confirm the following are included in your repo, checking each box:
 ### What is the link to your previous shim review request (if any, otherwise N/A)?
 *******************************************************************************
 [your text here]
+
+*******************************************************************************
+### If no security contacts have changed since verification, what is the link to your request, where they've been verified (if any, otherwise N/A)?
+*******************************************************************************
+[your text here]
