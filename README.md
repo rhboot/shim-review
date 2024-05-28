@@ -310,6 +310,16 @@ Summarize in one or two sentences, how your secure bootchain works on higher lev
 [your text here]
 
 *******************************************************************************
+### What contributions have you made to help us review the applications of other applicants?
+The reviewing process is meant to be a peer-review effort and the best way to have your application reviewed faster is to help with reviewing others. We are in most cases volunteers working on this venue in our free time, rather than being employed and paid to review the applications during our business hours. 
+
+A reasonable timeframe of waiting for a review can reach 2-3 months. Helping us is the best way to shorten this period. The more help we get, the faster and the smoother things will go.
+
+For newcomers, the applications labeled as [*easy to review*](https://github.com/rhboot/shim-review/issues?q=is%3Aopen+is%3Aissue+label%3A%22easy+to+review%22) are recommended to start the contribution process.
+*******************************************************************************
+[your text here]
+
+*******************************************************************************
 ### Add any additional information you think we may need to validate this shim signing application.
 *******************************************************************************
 [your text here]
