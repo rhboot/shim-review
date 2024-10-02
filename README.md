@@ -22,6 +22,29 @@ Here's the template:
 *******************************************************************************
 ### What organization or people are asking to have this signed?
 *******************************************************************************
+Organization name and website:  
+[your text here]
+
+*******************************************************************************
+### What's the legal data that proves the organization's genuineness?
+The reviewers should be able to easily verify, that your organization is a legal entity, to prevent abuse.
+Provide the information, which can prove the genuineness with certainty.
+*******************************************************************************
+Company/tax register entries or equivalent:  
+(a link to the organization entry in your jurisdiction's register will do)  
+
+[your text here]
+
+The public details of both your organization and the issuer in the EV certificate used for signing .cab files at Microsoft Hardware Dev Center File Signing Services.  
+(**not** the CA certificate embedded in your shim binary)
+
+Example:
+
+```
+Issuer: O=MyIssuer, Ltd., CN=MyIssuer EV Code Signing CA
+Subject: C=XX, O=MyCompany, Inc., CN=MyCompany, Inc.
+```
+
 [your text here]
 
 *******************************************************************************
