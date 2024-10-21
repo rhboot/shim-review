@@ -120,7 +120,8 @@ malicious actor from copying the private part.
 When asked about the security strategy used for the protection of your keys,
 and you indeed do use an HSM, tell us the story of setting up your signing
 infrastructure - showcase us, with utter pride, how prioritized the signing
-security is in your organization! 
+security is in your organization!  
+If possible, help the community by submitting an HCL (Hardware Compatibility List) entry, presenting what HSM you use, and what processes have been performed to make it work inside your infrastructure - see the [`hcl` directory](../hcl) for existing submissions.
 
 ### 3.3 Reproducible build
 
