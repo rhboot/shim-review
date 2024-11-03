@@ -109,7 +109,7 @@ There are strong recommendations on the types of certificates that
 should be used in shim, and also on how keys should be managed for
 security. See the 12th bullet in [Microsoft UEFI Signing
 Requirements](https://techcommunity.microsoft.com/t5/hardware-dev-center/updated-uefi-signing-requirements/ba-p/1062916)
-for tips on this, and also some suggested schems for key and certificate
+for tips on this, and also some suggested schemes for key and certificate
 management.
 
 The recommendation of using HSMs is worth mentioning here in particular. To
