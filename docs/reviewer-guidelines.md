@@ -110,7 +110,7 @@ referenced in the submission guidelines, but so long as the source is
 **clearly** the same, then it's acceptable to use a git repo instead.
 
 We can no longer accept shim signing submissions for versions before
-**15.7**.
+**15.8**.
 
 ## Certificates
 
