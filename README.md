@@ -208,6 +208,13 @@ If you are shipping an older kernel, double-check your sources; maybe you do not
 [your text here]
 
 *******************************************************************************
+### How does your signed kernel enforce lockdown when your system runs
+### with Secure Boot enabled?
+Hint: If it does not, we are not likely to sign your shim.
+*******************************************************************************
+[your text here]
+
+*******************************************************************************
 ### Do you build your signed kernel with additional local patches? What do they do?
 *******************************************************************************
 [your text here]
