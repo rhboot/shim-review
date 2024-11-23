@@ -109,8 +109,18 @@ There are strong recommendations on the types of certificates that
 should be used in shim, and also on how keys should be managed for
 security. See the 12th bullet in [Microsoft UEFI Signing
 Requirements](https://techcommunity.microsoft.com/t5/hardware-dev-center/updated-uefi-signing-requirements/ba-p/1062916)
-for tips on this, and also some sugested schems for key and certificate
+for tips on this, and also some suggested schemes for key and certificate
 management.
+
+The recommendation of using HSMs is worth mentioning here in particular. To
+ensure reasonable security, the keys should be generated directly in your HSM
+and the private part should never leave it. All the signing shall be done by
+delegating the cryptographic operations to your HSM in order to prevent a
+malicious actor from copying the private part.  
+When asked about the security strategy used for the protection of your keys,
+and you indeed do use an HSM, tell us the story of setting up your signing
+infrastructure - showcase us, with utter pride, how prioritized the signing
+security is in your organization!  
 
 ### 3.3 Reproducible build
 
