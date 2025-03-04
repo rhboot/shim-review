@@ -112,6 +112,22 @@ Requirements](https://techcommunity.microsoft.com/t5/hardware-dev-center/updated
 for tips on this, and also some sugested schems for key and certificate
 management.
 
+Vendors commonly embed a **CA certificate** in their shim build, and
+then use that as the root of trust for secondary signing keys. This
+can have some benefits in terms of key management. If you follow this
+route, **be careful** that your certificate has the appropriate X509
+v3 extension set, i.e.:
+
+```
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+```
+
+Shim has historically been quite forgiving when validating
+certificates, but this will change in the future. If you have a
+long-lived CA certificate without appropriate configuration, your
+Secure Boot chain may fail in future.
+
 ### 3.3 Reproducible build
 
 Reviewers will need to validate that they can reproduce your shim
