@@ -281,6 +281,15 @@ A _yes_ or _no_ will do. There's no penalty for the latter.
 [your text here]
 
 *******************************************************************************
+### Are you embedding a CA certificate in your shim?
+A _yes_ or _no_ will do. There's no penalty for the latter. However,
+if _yes_: does that certificate include the X509v3 Basic Constraints
+to say that it is a CA? See the [docs](./docs/) for more guidance
+about this.
+*******************************************************************************
+[your text here]
+
+*******************************************************************************
 ### Do you add a vendor-specific SBAT entry to the SBAT section in each binary that supports SBAT metadata ( GRUB2, fwupd, fwupdate, systemd-boot, systemd-stub, shim + all child shim binaries )?
 ### Please provide the exact SBAT entries for all binaries you are booting directly through shim.
 Hint: The history of SBAT and more information on how it works can be found [here](https://github.com/rhboot/shim/blob/main/SBAT.md). That document is large, so for just some examples check out [SBAT.example.md](https://github.com/rhboot/shim/blob/main/SBAT.example.md)
