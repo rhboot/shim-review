@@ -105,7 +105,21 @@ d503f778dc75895d3130da07e2ff23d2393862f95b6cd3d24b10cbd4af847217  shim-16.0.tar.
 b4367f3b1e0716d093f4230902e392d3228bd346e2e07a9377c498d8b3b08a5c0ad25c31aa03af66f54648618074a29b55a3e51925e5cfe5c7ac97257bd25880  shim-16.0.tar.bz2
 ```
 
-Make sure that you've verified that your build process uses that file as a source of truth (excluding external patches) and its checksum matches. Furthermore, there's [a detached signature as well](https://github.com/rhboot/shim/releases/download/16.0/shim-16.0.tar.bz2.asc) - check with the public key that has the fingerprint `8107B101A432AAC9FE8E547CA348D61BC2713E9F` that the tarball is authentic. Once you're sure, please confirm this here with a simple *yes*.
+Make sure that you've verified that your build process uses that file
+as a source of truth (excluding external patches) and its checksum
+matches. You can also further validate the release by checking the PGP
+signature: there's [a detached
+signature](https://github.com/rhboot/shim/releases/download/16.0/shim-16.0.tar.bz2.asc)
+
+The release is signed by the maintainer Peter Jones - his master key
+has the fingerprint `B00B48BC731AA8840FED9FB0EED266B70F4FEF10` and the
+signing sub-key in the signature here has the fingerprint
+`02093E0D19DDE0F7DFFBB53C1FD3F540256A1372`. A copy of his public key
+is included here for reference:
+[pjones.asc](https://github.com/rhboot/shim-review/pjones.asc)
+
+Once you're sure that the tarball you are using is correct and
+authentic, please confirm this here with a simple *yes*.
 
 A short guide on verifying public keys and signatures should be available in the [docs](./docs/) directory.
 *******************************************************************************
