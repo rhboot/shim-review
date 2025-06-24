@@ -1,7 +1,7 @@
-FROM ubuntu:focal
+FROM ubuntu:noble
 
 COPY . /shim-review
-RUN sed -i 's/# deb-src/deb-src/' /etc/apt/sources.list && \
+RUN sed -i 's/^Types: deb/& deb-src/' /etc/apt/sources.list.d/ubuntu.sources && \
     apt update -y && \
     DEBIAN_FRONTEND=noninteractive apt install -y devscripts git-buildpackage software-properties-common && \
     apt build-dep -y shim
