@@ -193,7 +193,7 @@ If systemd-boot is used:
    time-consuming to do right - if a vendor is doing their own novel
    patches we may need to get more reviews.
 1. For more information about systemd-boot's security posture, please
-   consult [its documentation](https://github.com/systemd/systemd/blob/main/src/boot/efi/UEFI_SECURITY.md).
+   consult [its documentation](https://github.com/systemd/systemd/blob/main/src/boot/UEFI_SECURITY.md).
 
 Example of the .sbat entry of a systemd-boot binary:
 ```
