@@ -72,15 +72,12 @@ The security contacts need to be verified before the shim can be accepted. For s
 
 An authorized reviewer will initiate contact verification by sending each security contact a PGP-encrypted email containing random words.
 You will be asked to post the contents of these mails in your `shim-review` issue to prove ownership of the email addresses and PGP keys.
+Please upload the PGP keys to a well-known keyserver like keyserver.ubuntu.com and/or include them in the review as an .asc file.
 *******************************************************************************
 - Name:
 - Position:
 - Email address:
 - PGP key fingerprint:
-
-(Key should be signed by the other security contacts, pushed to a keyserver
-like keyserver.ubuntu.com, and preferably have signatures that are reasonably
-well known in the Linux community.)
 
 *******************************************************************************
 ### Who is the secondary contact for security updates, etc.?
@@ -89,10 +86,6 @@ well known in the Linux community.)
 - Position:
 - Email address:
 - PGP key fingerprint:
-
-(Key should be signed by the other security contacts, pushed to a keyserver
-like keyserver.ubuntu.com, and preferably have signatures that are reasonably
-well known in the Linux community.)
 
 *******************************************************************************
 ### Were these binaries created from the 16.1 shim release tar?
