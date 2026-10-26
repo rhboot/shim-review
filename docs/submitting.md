@@ -118,6 +118,16 @@ Requirements](https://techcommunity.microsoft.com/t5/hardware-dev-center/updated
 for tips on this, and also some sugested schems for key and certificate
 management.
 
+For new submissions, and for any submission that introduces or replaces
+a certificate embedded in shim, each newly introduced certificate must
+use an RSA key with a modulus of at least 4096 bits. Newly introduced embedded RSA keys smaller than 4096 bits will not be accepted.
+
+This requirement does not require an existing vendor to replace a
+certificate that is reused unchanged in a new shim submission. However,
+vendors are strongly encouraged to replace existing smaller RSA keys with
+4096-bit or larger keys when they have an appropriate opportunity to do
+so.
+
 Vendors commonly embed a **CA certificate** in their shim build, and
 then use that as the root of trust for secondary signing keys. This
 can have some benefits in terms of key management. If you follow this
