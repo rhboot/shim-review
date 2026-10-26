@@ -130,6 +130,9 @@ Does the embedded certificate have a reasonable validity period? For a
 straight certificate, 1 to 5 years is probably sensible. For an
 embedded CA cert, longer is fine (20 years?)
 
+If the embedded certificate is new or changed from a previous accepted submission, verify that every newly introduced certificate uses an RSA key with a
+modulus of at least 4096 bits.
+
 If the submitter is embedding a CA certificate, do they adequately
 describe how the rest of their chain of keys/certificates is handled?
 

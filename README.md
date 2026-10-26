@@ -325,6 +325,21 @@ about this.
 [your text here]
 
 *******************************************************************************
+### What certificates are embedded in your shim, and what are their key types and sizes?
+For each certificate embedded in your shim, state whether it is newly
+embedded in your shim or reused unchanged from your last accepted shim.
+For each certificate in your shim, provide its algorithm
+and key size.
+
+Certificates newly embedded in your shim must use an RSA key with a modulus
+of at least 4096 bits. Existing vendors reusing a certificate unchanged
+are not required to replace it, but are strongly encouraged to replace
+smaller RSA keys with 4096-bit or larger keys when they have an
+appropriate opportunity to do so.
+*******************************************************************************
+[your text here]
+
+*******************************************************************************
 ### Do you add a vendor-specific SBAT entry to the SBAT section in each binary that supports SBAT metadata ( GRUB2, fwupd, fwupdate, systemd-boot, systemd-stub, shim + all child shim binaries )?
 ### Please provide the exact SBAT entries for all binaries you are booting directly through shim.
 Hint: The history of SBAT and more information on how it works can be found [here](https://github.com/rhboot/shim/blob/main/SBAT.md). That document is large, so for just some examples check out [SBAT.example.md](https://github.com/rhboot/shim/blob/main/SBAT.example.md)
