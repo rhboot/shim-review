@@ -8,6 +8,10 @@ Confirm the following are included in your repo, checking each box:
  - [ ] any extra patches to grub via your own git tree or as files
  - [ ] build logs
  - [ ] a Dockerfile to reproduce the build of the provided shim EFI binaries
+ - [ ] completed the AI-assisted submission declaration in README.md
+ - [ ] the responsible human submitter has reviewed and understands the
+       complete submission and will answer review questions directly
+
 
 (If you don't have anything to include in one of these cases, then
 check that case and mention this in your submission.)
