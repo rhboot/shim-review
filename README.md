@@ -412,3 +412,17 @@ For newcomers, the applications labeled as [*easy to review*](https://github.com
 ### Add any additional information you think we may need to validate this shim signing application.
 *******************************************************************************
 [your text here]
+
+*******************************************************************************
+### AI-assisted submission declaration
+*******************************************************************************
+Did you use generative-AI tools to prepare any material in this submission?
+If yes, identify the tools and the material they assisted with.
+
+Confirm that a responsible human has reviewed and understands the entire
+submission; is responsible for its correctness, security, reproducibility,
+provenance, and license compliance; and will answer review questions directly.
+
+See [docs/ai-assisted-submissions.md](docs/ai-assisted-submissions.md) for the policy.
+*******************************************************************************
+[your text here]
