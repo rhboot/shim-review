@@ -1,9 +1,10 @@
 # Submitting a shim build
 
 Here's a quick guide to the process for getting a shim build reviewed and
-signed. The other, more detailed docs are listed here: (one as of today)
+signed. The other, more detailed docs are listed here:
 
 - [Guidelines for reviewers](./reviewer-guidelines)
+- [AI assisted submissions policy](./ai-assisted-submissions.md)
 
 If anything here or in the submission templates is not clear, please
 ask for help before you spend a lot of time on an incorrect path.

@@ -28,6 +28,13 @@ First of all, there are some higher-level things to consider:
    with security issues in the future? A tiny 1-man outfit may just go
    away without warning.
 
+1. Did the submitter complete the AI-assisted submission declaration,
+   including the human-responsibility confirmation even if no AI tools
+   were used? If AI tools were used, can the submitter explain and
+   verify the assisted material? Assess their demonstrated understanding
+   and evidence, not writing style or suspected AI use alone. See the
+   [AI-assisted submissions policy](./ai-assisted-submissions.md).
+
 1. If the developer hasn't done what we ask for, then **say so**. This
    can cover a range of things with different severities, e.g.
 
