@@ -195,9 +195,8 @@ If systemd-boot is used:
    the patches stated by the issue template and README.md, if any?
 1. Does it include the appropriate SBAT metadata, and if Type #2 BLS
    (i.e.: UKIs) are used, are the identifiers of systemd-boot and
-   systemd-stub (UKI/kernel.efi) separate and distinct (examples after
-   the list)? For UKIs, is there also a line that identifies the binary
-   as a UKI tagged with vendor-specific metadata?
+   the stub (UKI/kernel.efi) separate and distinct (examples after
+   the list)?
 1. Are there any custom patches applied?  If so, are they explained by
    the submitter and well understood? This can be **very**
    time-consuming to do right - if a vendor is doing their own novel
@@ -211,6 +210,34 @@ sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
 systemd-boot,1,The systemd Developers,systemd,255,https://systemd.io/
 systemd-boot.debian,1,Debian GNU/Linux,systemd,255-1,https://bugs.debian.org/
 ```
+
+## uki
+
+Does the submitter sign and load UKIs as the 3rd stage? Some distributions,
+like Fedora, have started to offer signed UKIs for certain use cases.
+
+1. Does it include the appropriate SBAT metadata, and are the SBAT identifiers
+   of the 1st stage and of the UKI separate and distinct (examples after
+   the list)? For UKIs, is there also a line that identifies the binary
+   as a UKI tagged with vendor-specific metadata?
+1. Does it use `systemd-stub` as the EFI stub, or a different one?
+   - For `systemd-stub`:
+     - Are there any custom patches applied? If so, are they explained by
+       the submitter and well understood?
+     - Is it the minimum required version, or alternatively does it have
+       the patches stated by the issue template and README.md, if any?
+     - Does the UKI include a `.profile` section with the `TOFU=` variable set?
+       If so, it has to be rejected outright, as it can be used to change the
+       chain of trust of an existing system, and it's intended for custom
+       deployments only. To check: `ukify inspect foo.efi | grep TOFU` must
+       be empty.
+   - For a different EFI stub:
+     - Is it released under an [OSI-approved license](https://opensource.org/licenses)?
+     - Are there any custom patches applied? If so, are they explained by
+       the submitter and well understood?
+1. The kernel embedded in the UKI must follow the recommendations as any
+   other kernel, and can be inspected by extrating the content of the `.linux`
+   section.
 
 Example of the .sbat entry of a UKI:
 ```

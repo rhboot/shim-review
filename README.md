@@ -26,7 +26,7 @@ Here's the template:
 *******************************************************************************
 ### What organization or people are asking to have this signed?
 *******************************************************************************
-Organization name and website:  
+Organization name and website:
 [your text here]
 
 *******************************************************************************
@@ -34,12 +34,12 @@ Organization name and website:
 The reviewers should be able to easily verify, that your organization is a legal entity, to prevent abuse.
 Provide the information, which can prove the genuineness with certainty.
 *******************************************************************************
-Company/tax register entries or equivalent:  
-(a link to the organization entry in your jurisdiction's register will do)  
+Company/tax register entries or equivalent:
+(a link to the organization entry in your jurisdiction's register will do)
 
 [your text here]
 
-The public details of both your organization and the issuer in the EV certificate used for signing .cab files at Microsoft Hardware Dev Center File Signing Services.  
+The public details of both your organization and the issuer in the EV certificate used for signing .cab files at Microsoft Hardware Dev Center File Signing Services.
 (**not** the CA certificate embedded in your shim binary)
 
 Example:
@@ -221,7 +221,7 @@ Skip this, if you're not using GRUB2.
 
 *******************************************************************************
 ### If shim is loading GRUB2 bootloader, and if these fixes have been applied, is the upstream global SBAT generation in your GRUB2 binary set to 5?
-Skip this, if you're not using GRUB2, otherwise do you have an entry in your GRUB2 binary similar to:  
+Skip this, if you're not using GRUB2, otherwise do you have an entry in your GRUB2 binary similar to:
 `grub,5,Free Software Foundation,grub,GRUB_UPSTREAM_VERSION,https://www.gnu.org/software/grub/`?
 *******************************************************************************
 [your text here]
@@ -238,7 +238,7 @@ If you had no previous signed shim, say so here. Otherwise a simple _yes_ will d
 ### Is upstream commit [1957a85b0032a81e6482ca4aab883643b8dae06e "efi: Restrict efivar_ssdt_load when the kernel is locked down"](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=1957a85b0032a81e6482ca4aab883643b8dae06e) applied?
 ### Is upstream commit [75b0cea7bf307f362057cc778efe89af4c615354 "ACPI: configfs: Disallow loading ACPI tables when locked down"](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=75b0cea7bf307f362057cc778efe89af4c615354) applied?
 ### Is upstream commit [eadb2f47a3ced5c64b23b90fd2a3463f63726066 "lockdown: also lock down previous kgdb use"](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=eadb2f47a3ced5c64b23b90fd2a3463f63726066) applied?
-Hint: upstream kernels should have all these applied, but if you ship your own heavily-modified older kernel version, that is being maintained separately from upstream, this may not be the case.  
+Hint: upstream kernels should have all these applied, but if you ship your own heavily-modified older kernel version, that is being maintained separately from upstream, this may not be the case.
 If you are shipping an older kernel, double-check your sources; maybe you do not have all the patches, but ship a configuration, that does not expose the issue(s).
 *******************************************************************************
 [your text here]
@@ -366,6 +366,12 @@ Hint: this is about those modules that are in the binary itself, not the `.mod` 
 [your text here]
 
 *******************************************************************************
+### If you are signing a UKI as the 3rd stage, and using systemd-stub as the EFI stub, you must not use the **TOFU** feature
+*******************************************************************************
+The **TOFU** profile feature can be used to change the chain of trust of an existing system, so UKIs trusted by 2nd stages trusted by shim must not use it.
+This is disabled by default in the toolchain. To verify your UKI, run `ukify inspect foo.efi | grep TOFU` and check that it turns out empty.
+
+*******************************************************************************
 ### What is the origin and full version number of your bootloader (GRUB2 or systemd-boot or other)?
 *******************************************************************************
 [your text here]
@@ -400,7 +406,7 @@ Summarize in one or two sentences, how your secure bootchain works on higher lev
 
 *******************************************************************************
 ### What contributions have you made to help us review the applications of other applicants?
-The reviewing process is meant to be a peer-review effort and the best way to have your application reviewed faster is to help with reviewing others. We are in most cases volunteers working on this venue in our free time, rather than being employed and paid to review the applications during our business hours. 
+The reviewing process is meant to be a peer-review effort and the best way to have your application reviewed faster is to help with reviewing others. We are in most cases volunteers working on this venue in our free time, rather than being employed and paid to review the applications during our business hours.
 
 A reasonable timeframe of waiting for a review can reach 2-3 months. Helping us is the best way to shorten this period. The more help we get, the faster and the smoother things will go.
 
