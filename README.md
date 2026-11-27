@@ -366,6 +366,12 @@ Hint: this is about those modules that are in the binary itself, not the `.mod` 
 [your text here]
 
 *******************************************************************************
+### If you are signing a UKI as the 3rd stage, and using systemd-stub as the EFI stub, you must not use the **TOFU** feature
+*******************************************************************************
+The **TOFU** profile feature can be used to change the chain of trust of an existing system, so UKIs trusted by 2nd stages trusted by shim must not use it.
+This is disabled by default in the toolchain. To verify your UKI, run `ukify inspect foo.efi | grep TOFU` and check that it turns out empty.
+
+*******************************************************************************
 ### What is the origin and full version number of your bootloader (GRUB2 or systemd-boot or other)?
 *******************************************************************************
 [your text here]
